@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Graduation Bangladesh · MSc · MPhil · PhD</title>
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+            background: #f2f6fc;
+            color: #11212e;
+            padding: 20px 16px 32px;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* header */
+        .header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            padding: 12px 24px;
+            border-radius: 60px;
+            box-shadow: 0 4px 14px rgba(0, 20, 40, 0.04);
+            margin-bottom: 24px;
+            border: 1px solid #dce6f2;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0a2a4a;
+        }
+        .logo i {
+            color: #1d6f9c;
+            margin-right: 8px;
+        }
+        .logo span {
+            font-weight: 300;
+            color: #2f5577;
+        }
+
+        .badge-bd {
+            background: #0a5c3a;
+            color: white;
+            padding: 4px 18px;
+            border-radius: 40px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .badge-bd i {
+            color: #ffd966;
+        }
+
+        /* hero */
+        .hero {
+            background: linear-gradient(145deg, #e3edf9, #d2e1f2);
+            border-radius: 36px;
+            padding: 20px 28px;
+            margin-bottom: 26px;
+            border: 1px solid #c5d6ed;
+        }
+        .hero h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #0a2a4a;
+        }
+        .hero h1 i {
+            color: #1d6f9c;
+            margin-right: 10px;
+        }
+        .hero p {
+            font-size: 1rem;
+            color: #1a3d5c;
+            margin-top: 2px;
+        }
+        .hero p i {
+            color: #1d6f9c;
+            margin-right: 6px;
+        }
+        .hero .stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 10px;
+        }
+        .hero .stats span {
+            background: white;
+            padding: 4px 18px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #0a2a4a;
+            border: 1px solid #bed2eb;
+        }
+        .hero .stats span i {
+            margin-right: 6px;
+            color: #1d6f9c;
+        }
+
+        /* filter bar */
+        .filter-bar {
+            background: white;
+            padding: 10px 16px;
+            border-radius: 60px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+            border: 2px solid #dce6f2;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.01);
+        }
+        .filter-bar .search-wrap {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            background: #ecf4fe;
+            border-radius: 40px;
+            padding: 0 14px;
+            min-width: 150px;
+        }
+        .filter-bar .search-wrap i {
+            color: #6f8db0;
+        }
+        .filter-bar .search-wrap input {
+            border: none;
+            padding: 8px 12px;
+            font-size: 0.9rem;
+            flex: 1;
+            background: transparent;
+            outline: none;
+            color: #11212e;
+            min-width: 80px;
+        }
+        .filter-bar .search-wrap input::placeholder {
+            color: #98b1cf;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            align-items: center;
+        }
+        .filter-group .filter-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: #2f5577;
+            margin-right: 2px;
+        }
+        .filter-btn {
+            background: #eaf1fb;
+            border: 1px solid #c5d9f0;
+            padding: 4px 14px;
+            border-radius: 40px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: #0a2a4a;
+            cursor: pointer;
+            transition: 0.2s;
+            white-space: nowrap;
+        }
+        .filter-btn:hover {
+            background: #d4e2f5;
+        }
+        .filter-btn.active {
+            background: #0a2a4a;
+            color: white;
+            border-color: #0a2a4a;
+        }
+        .filter-btn i {
+            margin-right: 3px;
+            font-size: 0.65rem;
+        }
+        .clear-filters {
+            background: transparent;
+            border: none;
+            color: #6f8db0;
+            font-size: 0.7rem;
+            cursor: pointer;
+            font-weight: 500;
+            padding: 4px 6px;
+        }
+        .clear-filters:hover {
+            color: #b13e2e;
+        }
+
+        /* results */
+        .results-area {
+            margin-top: 6px;
+        }
+
+        .results-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .results-header h2 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #0a2a4a;
+        }
+        .results-header h2 i {
+            color: #1d6f9c;
+            margin-right: 8px;
+        }
+        .results-header .count {
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: #2f5577;
+            background: #eaf1fb;
+            padding: 2px 16px;
+            border-radius: 40px;
+        }
+
+        .result-card {
+            background: white;
+            border-radius: 20px;
+            padding: 16px 20px;
+            border: 1px solid #e8f0fa;
+            margin-bottom: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            transition: 0.15s;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.01);
+        }
+        .result-card:hover {
+            border-color: #b8cfe8;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+        .result-card .info {
+            flex: 1;
+            min-width: 200px;
+        }
+        .result-card .info h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #0a2a4a;
+        }
+        .result-card .info .meta {
+            font-size: 0.8rem;
+            color: #2f5577;
+            margin-top: 2px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px 12px;
+            align-items: center;
+        }
+        .result-card .info .meta i {
+            margin-right: 4px;
+            color: #1d6f9c;
+        }
+        .location-tag {
+            background: #e0eaf5;
+            padding: 0 12px;
+            border-radius: 40px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: #0a2a4a;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 2px 12px;
+            border-radius: 30px;
+            font-size: 0.65rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .tag-msc { background: #d4e2f5; color: #0a2a4a; }
+        .tag-mphil { background: #d4f0e6; color: #145a3e; }
+        .tag-phd { background: #f0dce8; color: #6a2a4a; }
+        .tag-public { background: #0a2a4a; color: white; }
+        .tag-private { background: #6b4a7a; color: white; }
+
+        .link-btn {
+            background: #eaf1fb;
+            padding: 6px 18px;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: #0a2a4a;
+            border: 1px solid #c5d9f0;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+        }
+        .link-btn i {
+            font-size: 0.6rem;
+            color: #1d6f9c;
+        }
+        .link-btn:hover {
+            background: #0a2a4a;
+            color: white;
+            border-color: #0a2a4a;
+        }
+        .link-btn:hover i {
+            color: white;
+        }
+
+        .no-result {
+            text-align: center;
+            padding: 36px 16px;
+            color: #4f7295;
+        }
+        .no-result i {
+            font-size: 2.2rem;
+            color: #b8cee8;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .footer {
+            margin-top: 40px;
+            border-top: 1px solid #dce5f0;
+            padding: 20px 0 6px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            color: #2f5577;
+            font-size: 0.8rem;
+        }
+        .footer i {
+            margin-right: 6px;
+            color: #1a4a7a;
+        }
+
+        @media (max-width: 700px) {
+            .header {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 8px;
+                padding: 14px 18px;
+                border-radius: 32px;
+            }
+            .hero h1 { font-size: 1.4rem; }
+            .filter-bar {
+                border-radius: 32px;
+                padding: 12px 14px;
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .filter-bar .search-wrap { width: 100%; }
+            .filter-group { justify-content: center; }
+            .result-card { flex-direction: column; align-items: flex-start; gap: 8px; }
+            .result-card .link-btn { align-self: flex-start; }
+        }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.2rem; }
+            .hero .stats span { font-size: 0.65rem; padding: 2px 12px; }
+            .filter-btn { font-size: 0.65rem; padding: 4px 10px; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- header -->
+    <div class="header">
+        <div class="logo">
+            <i class="fas fa-graduation-cap"></i> PostGraduation<span>Bangladesh</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+            <span class="badge-bd"><i class="fas fa-circle"></i> Bangladesh</span>
+            <span style="font-size:0.8rem; color:#2f5577;"><i class="fas fa-arrow-right"></i> MSc · MPhil · PhD</span>
+        </div>
+    </div>
+
+    <!-- hero -->
+    <div class="hero">
+        <h1><i class="fas fa-graduation-cap"></i> Postgraduate programmes in Bangladesh</h1>
+        <p><i class="fas fa-arrow-right"></i> All public & private universities — filter by location, degree, or type.</p>
+        <div class="stats" id="heroStats">
+            <span><i class="fas fa-university"></i> <span id="totalCount">0</span> programmes</span>
+            <span><i class="fas fa-building-columns"></i> <span id="uniCount">0</span> universities</span>
+            <span><i class="fas fa-rotate"></i> updated daily</span>
+        </div>
+    </div>
+
+    <!-- filter bar -->
+    <div class="filter-bar">
+        <div class="search-wrap">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search university, field, degree..." />
+        </div>
+
+        <div class="filter-group">
+            <span class="filter-label"><i class="fas fa-tag"></i> Degree:</span>
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="msc">MSc</button>
+            <button class="filter-btn" data-filter="mphil">MPhil</button>
+            <button class="filter-btn" data-filter="phd">PhD</button>
+        </div>
+
+        <div class="filter-group">
+            <span class="filter-label"><i class="fas fa-school"></i> Type:</span>
+            <button class="filter-btn active" data-type="all">All</button>
+            <button class="filter-btn" data-type="public">Public</button>
+            <button class="filter-btn" data-type="private">Private</button>
+        </div>
+
+        <div class="filter-group">
+            <span class="filter-label"><i class="fas fa-map-pin"></i> Division:</span>
+            <button class="filter-btn active" data-division="all">All</button>
+            <button class="filter-btn" data-division="dhaka">Dhaka</button>
+            <button class="filter-btn" data-division="chittagong">Chittagong</button>
+            <button class="filter-btn" data-division="rajshahi">Rajshahi</button>
+            <button class="filter-btn" data-division="khulna">Khulna</button>
+            <button class="filter-btn" data-division="sylhet">Sylhet</button>
+            <button class="filter-btn" data-division="barishal">Barishal</button>
+            <button class="filter-btn" data-division="rangpur">Rangpur</button>
+        </div>
+
+        <button class="clear-filters" id="clearFilters"><i class="fas fa-times"></i> Clear</button>
+    </div>
+
+    <!-- results -->
+    <div class="results-area">
+        <div class="results-header">
+            <h2><i class="fas fa-list-ul"></i> Postgraduate programmes</h2>
+            <span class="count" id="resultCount">Showing 0</span>
+        </div>
+        <div id="resultsContainer">
+            <!-- rendered by JS -->
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div>
+            <i class="fas fa-graduation-cap"></i> PostGraduationBangladesh &nbsp;|&nbsp; MSc · MPhil · PhD
+        </div>
+        <div>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-youtube" style="margin-left:12px;"></i>
+            <i class="fab fa-twitter" style="margin-left:12px;"></i>
+            <span style="margin-left:20px;">⚡ 2026</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function() {
+        // ---------- DATA : MSc/MPhil/PhD programmes in Bangladesh with location ----------
+        const programmes = [
+            // Dhaka division
+            { uni: "University of Dhaka", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
+            { uni: "University of Dhaka", degree: "MSc/MPhil/PhD", field: "Engineering", type: "public", division: "dhaka", link: "#" },
+            { uni: "University of Dhaka", degree: "MPhil/PhD", field: "Social Sciences", type: "public", division: "dhaka", link: "#" },
+            { uni: "BUET", degree: "MSc/MPhil/PhD", field: "Engineering", type: "public", division: "dhaka", link: "#" },
+            { uni: "BUET", degree: "MSc/PhD", field: "Architecture", type: "public", division: "dhaka", link: "#" },
+            { uni: "Jahangirnagar University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
+            { uni: "Jahangirnagar University", degree: "MSc/PhD", field: "Social Sciences", type: "public", division: "dhaka", link: "#" },
+            { uni: "BRAC University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+            { uni: "BRAC University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+            { uni: "North South University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+            { uni: "North South University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+            { uni: "American International University", degree: "MSc/MPhil/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+            { uni: "American International University", degree: "MSc/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+            { uni: "Independent University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+            { uni: "Independent University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+            { uni: "United International University", degree: "MSc/MPhil/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+            { uni: "United International University", degree: "MSc/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+            { uni: "East West University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+            { uni: "East West University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+            { uni: "Daffodil International University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+            { uni: "Daffodil International University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+            { uni: "ASA University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+            { uni: "ASA University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+            { uni: "City University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+            { uni: "City University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+            { uni: "Stamford University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+            { uni: "Stamford University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+
+            // Chittagong division
+            { uni: "University of Chittagong", degree: "MSc/MPhil", field: "Science", type: "public", division: "chittagong", link: "#" },
+            { uni: "University of Chittagong", degree: "MSc/PhD", field: "Engineering", type: "public", division: "chittagong", link: "#" },
+            { uni: "Chittagong University of Engineering", degree: "MSc/MPhil/PhD", field: "Engineering", type: "public", division: "chittagong", link: "#" },
+            { uni: "Chittagong University of Engineering", degree: "MSc/PhD", field: "Science", type: "public", division: "chittagong", link: "#" },
+
+            // Rajshahi division
+            { uni: "University of Rajshahi", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rajshahi", link: "#" },
+            { uni: "University of Rajshahi", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rajshahi", link: "#" },
+            { uni: "Rajshahi University of Engineering", degree: "MSc/MPhil/PhD", field: "Engineering", type: "public", division: "rajshahi", link: "#" },
+
+            // Khulna division
+            { uni: "Khulna University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+            { uni: "Khulna University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "khulna", link: "#" },
+            { uni: "Khulna University of Engineering", degree: "MSc/MPhil/PhD", field: "Engineering", type: "public", division: "khulna", link: "#" },
+            { uni: "Islamic University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+
+            // Sylhet division
+            { uni: "Shahjalal University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+            { uni: "Shahjalal University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "sylhet", link: "#" },
+            { uni: "Sylhet Agricultural University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+
+            // Barishal division
+            { uni: "University of Barishal", degree: "MSc/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+            { uni: "University of Barishal", degree: "MSc/MPhil", field: "Engineering", type: "public", division: "barishal", link: "#" },
+            { uni: "Patuakhali University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+
+            // Rangpur division
+            { uni: "Rangpur University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+            { uni: "Rangpur University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rangpur", link: "#" },
+            { uni: "Begum Rokeya University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+        ];
+
+        // DOM
+        const resultsContainer = document.getElementById('resultsContainer');
+        const resultCount = document.getElementById('resultCount');
+        const totalCount = document.getElementById('totalCount');
+        const uniCount = document.getElementById('uniCount');
+        const searchInput = document.getElementById('searchInput');
+        const clearFiltersBtn = document.getElementById('clearFilters');
+
+        // state
+        let currentDegree = 'all';
+        let currentUniType = 'all';
+        let currentDivision = 'all';
+        let searchQuery = '';
+
+        // render
+        function renderResults() {
+            const filtered = programmes.filter(item => {
+                let degreeMatch = true;
+                if (currentDegree !== 'all') {
+                    if (currentDegree === 'msc') degreeMatch = item.degree.includes('MSc');
+                    else if (currentDegree === 'mphil') degreeMatch = item.degree.includes('MPhil');
+                    else if (currentDegree === 'phd') degreeMatch = item.degree.includes('PhD');
+                }
+
+                let typeMatch = true;
+                if (currentUniType !== 'all') {
+                    typeMatch = item.type === currentUniType;
+                }
+
+                let divisionMatch = true;
+                if (currentDivision !== 'all') {
+                    divisionMatch = item.division === currentDivision;
+                }
+
+                let searchMatch = true;
+                if (searchQuery.trim() !== '') {
+                    const q = searchQuery.toLowerCase().trim();
+                    searchMatch = item.uni.toLowerCase().includes(q) ||
+                                  item.field.toLowerCase().includes(q) ||
+                                  item.degree.toLowerCase().includes(q) ||
+                                  item.division.toLowerCase().includes(q);
+                }
+                return degreeMatch && typeMatch && divisionMatch && searchMatch;
+            });
+
+            // update counts
+            const uniqueUnis = new Set(filtered.map(p => p.uni));
+            totalCount.textContent = filtered.length;
+            uniCount.textContent = uniqueUnis.size;
+            resultCount.textContent = `Showing ${filtered.length}`;
+
+            if (filtered.length === 0) {
+                resultsContainer.innerHTML = `
+                    <div class="no-result">
+                        <i class="fas fa-search-minus"></i>
+                        <p>No programmes match your criteria.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            let html = '';
+            filtered.forEach(item => {
+                // degree badges
+                let degBadges = '';
+                if (item.degree.includes('MSc')) degBadges += `<span class="tag tag-msc">MSc</span> `;
+                if (item.degree.includes('MPhil')) degBadges += `<span class="tag tag-mphil">MPhil</span> `;
+                if (item.degree.includes('PhD')) degBadges += `<span class="tag tag-phd">PhD</span> `;
+                if (degBadges === '') degBadges = `<span class="tag tag-msc">${item.degree}</span>`;
+
+                // uni type badge
+                const typeBadge = item.type === 'public' 
+                    ? `<span class="tag tag-public"><i class="fas fa-university"></i> Public</span>`
+                    : `<span class="tag tag-private"><i class="fas fa-building"></i> Private</span>`;
+
+                // division label
+                const divisionDisplay = item.division.charAt(0).toUpperCase() + item.division.slice(1);
+
+                html += `
+                    <div class="result-card">
+                        <div class="info">
+                            <h3><i class="fas fa-school" style="color:#1d6f9c; margin-right:6px;"></i>${item.uni}</h3>
+                            <div class="meta">
+                                <span><i class="fas fa-flask"></i> ${item.field}</span>
+                                <span>|</span>
+                                ${typeBadge}
+                                <span>|</span>
+                                ${degBadges}
+                                <span>|</span>
+                                <span class="location-tag"><i class="fas fa-map-pin"></i> ${divisionDisplay}</span>
+                            </div>
+                        </div>
+                        <a href="${item.link}" class="link-btn" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Details
+                        </a>
+                    </div>
+                `;
+            });
+            resultsContainer.innerHTML = html;
+        }
+
+        // update active buttons
+        function updateFilters() {
+            document.querySelectorAll('[data-filter]').forEach(btn => {
+                const val = btn.dataset.filter;
+                btn.classList.toggle('active', val === currentDegree);
+            });
+            document.querySelectorAll('[data-type]').forEach(btn => {
+                const val = btn.dataset.type;
+                btn.classList.toggle('active', val === currentUniType);
+            });
+            document.querySelectorAll('[data-division]').forEach(btn => {
+                const val = btn.dataset.division;
+                btn.classList.toggle('active', val === currentDivision);
+            });
+            renderResults();
+        }
+
+        // event listeners
+        // degree filter
+        document.querySelectorAll('[data-filter]').forEach(btn => {
+            btn.addEventListener('click', function() {
+                currentDegree = this.dataset.filter;
+                updateFilters();
+            });
+        });
+
+        // uni type filter
+        document.querySelectorAll('[data-type]').forEach(btn => {
+            btn.addEventListener('click', function() {
+                currentUniType = this.dataset.type;
+                updateFilters();
+            });
+        });
+
+        // division filter
+        document.querySelectorAll('[data-division]').forEach(btn => {
+            btn.addEventListener('click', function() {
+                currentDivision = this.dataset.division;
+                updateFilters();
+            });
+        });
+
+        // search
+        searchInput.addEventListener('input', function() {
+            searchQuery = this.value;
+            renderResults();
+        });
+
+        // clear
+        clearFiltersBtn.addEventListener('click', function() {
+            currentDegree = 'all';
+            currentUniType = 'all';
+            currentDivision = 'all';
+            searchQuery = '';
+            searchInput.value = '';
+            updateFilters();
+        });
+
+        // initial render
+        renderResults();
+
+        // hero timestamp
+        const heroStats = document.getElementById('heroStats');
+        if (heroStats) {
+            const now = new Date();
+            const timeStr = now.toLocaleTimeString('en-BD', { hour: '2-digit', minute: '2-digit', hour12: false });
+            const span = document.createElement('span');
+            span.innerHTML = `<i class="far fa-clock"></i> updated ${timeStr}`;
+            heroStats.appendChild(span);
+        }
+
+        console.log("📚 PostGraduationBangladesh · MSc · MPhil · PhD");
+        console.log("📍 Filter by division, degree, or university type.");
+    })();
+</script>
+</body>
+</html>
