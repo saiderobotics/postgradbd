@@ -474,65 +474,1617 @@
         // ---------- DATA : MSc/MPhil/PhD programmes in Bangladesh with location ----------
         const programmes = [
             // Dhaka division
-            { uni: "University of Dhaka", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
-            { uni: "University of Dhaka", degree: "MSc/MPhil/PhD", field: "Engineering", type: "public", division: "dhaka", link: "#" },
-            { uni: "University of Dhaka", degree: "MPhil/PhD", field: "Social Sciences", type: "public", division: "dhaka", link: "#" },
-            { uni: "BUET", degree: "MSc/MPhil/PhD", field: "Engineering", type: "public", division: "dhaka", link: "#" },
-            { uni: "BUET", degree: "MSc/PhD", field: "Architecture", type: "public", division: "dhaka", link: "#" },
-            { uni: "Jahangirnagar University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
-            { uni: "Jahangirnagar University", degree: "MSc/PhD", field: "Social Sciences", type: "public", division: "dhaka", link: "#" },
-            { uni: "BRAC University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
-            { uni: "BRAC University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
-            { uni: "North South University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
-            { uni: "North South University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
-            { uni: "American International University", degree: "MSc/MPhil/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
-            { uni: "American International University", degree: "MSc/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
-            { uni: "Independent University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
-            { uni: "Independent University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
-            { uni: "United International University", degree: "MSc/MPhil/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
-            { uni: "United International University", degree: "MSc/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
-            { uni: "East West University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
-            { uni: "East West University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
-            { uni: "Daffodil International University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
-            { uni: "Daffodil International University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
-            { uni: "ASA University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
-            { uni: "ASA University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
-            { uni: "City University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
-            { uni: "City University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
-            { uni: "Stamford University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
-            { uni: "Stamford University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    // 1. University of Dhaka
+    { uni: "University of Dhaka", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "University of Dhaka", degree: "MSc/MPhil/PhD", field: "Engineering", type: "public", division: "dhaka", link: "#" },
+    { uni: "University of Dhaka", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "dhaka", link: "#" },
 
-            // Chittagong division
-            { uni: "University of Chittagong", degree: "MSc/MPhil", field: "Science", type: "public", division: "chittagong", link: "#" },
-            { uni: "University of Chittagong", degree: "MSc/PhD", field: "Engineering", type: "public", division: "chittagong", link: "#" },
-            { uni: "Chittagong University of Engineering", degree: "MSc/MPhil/PhD", field: "Engineering", type: "public", division: "chittagong", link: "#" },
-            { uni: "Chittagong University of Engineering", degree: "MSc/PhD", field: "Science", type: "public", division: "chittagong", link: "#" },
+    // 2. BUET
+    { uni: "BUET", degree: "MSc/MPhil/PhD", field: "Engineering", type: "public", division: "dhaka", link: "#" },
+    { uni: "BUET", degree: "MSc/PhD", field: "Architecture", type: "public", division: "dhaka", link: "#" },
+    { uni: "BUET", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "dhaka", link: "#" },
+    { uni: "BUET", degree: "MSc/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
 
-            // Rajshahi division
-            { uni: "University of Rajshahi", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rajshahi", link: "#" },
-            { uni: "University of Rajshahi", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rajshahi", link: "#" },
-            { uni: "Rajshahi University of Engineering", degree: "MSc/MPhil/PhD", field: "Engineering", type: "public", division: "rajshahi", link: "#" },
+    // 3. Jahangirnagar University
+    { uni: "Jahangirnagar University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Jahangirnagar University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "dhaka", link: "#" },
+    { uni: "Jahangirnagar University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "dhaka", link: "#" },
 
-            // Khulna division
-            { uni: "Khulna University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
-            { uni: "Khulna University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "khulna", link: "#" },
-            { uni: "Khulna University of Engineering", degree: "MSc/MPhil/PhD", field: "Engineering", type: "public", division: "khulna", link: "#" },
-            { uni: "Islamic University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+    // 4. Bangladesh University of Textiles (BUTEX)
+    { uni: "Bangladesh University of Textiles", degree: "MSc/PhD", field: "Engineering", type: "public", division: "dhaka", link: "#" },
+    { uni: "Bangladesh University of Textiles", degree: "MSc/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
 
-            // Sylhet division
-            { uni: "Shahjalal University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
-            { uni: "Shahjalal University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "sylhet", link: "#" },
-            { uni: "Sylhet Agricultural University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+    // 5. Dhaka University of Engineering & Technology (DUET)
+    { uni: "Dhaka University of Engineering & Technology", degree: "MSc/MPhil/PhD", field: "Engineering", type: "public", division: "dhaka", link: "#" },
+    { uni: "Dhaka University of Engineering & Technology", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "dhaka", link: "#" },
+    { uni: "Dhaka University of Engineering & Technology", degree: "MSc/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
 
-            // Barishal division
-            { uni: "University of Barishal", degree: "MSc/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
-            { uni: "University of Barishal", degree: "MSc/MPhil", field: "Engineering", type: "public", division: "barishal", link: "#" },
-            { uni: "Patuakhali University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+    // 6. Bangladesh Agricultural University (BAU)
+    { uni: "Bangladesh Agricultural University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Bangladesh Agricultural University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "dhaka", link: "#" },
+    { uni: "Bangladesh Agricultural University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "dhaka", link: "#" },
 
-            // Rangpur division
-            { uni: "Rangpur University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
-            { uni: "Rangpur University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rangpur", link: "#" },
-            { uni: "Begum Rokeya University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+    // 7. National University of Bangladesh
+    { uni: "National University of Bangladesh", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "National University of Bangladesh", degree: "MSc/PhD", field: "Engineering", type: "public", division: "dhaka", link: "#" },
+    { uni: "National University of Bangladesh", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "dhaka", link: "#" },
+
+    // 8. Islamic Arabic University
+    { uni: "Islamic Arabic University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Islamic Arabic University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "dhaka", link: "#" },
+
+    // 9. Sher-e-Bangla Agricultural University
+    { uni: "Sher-e-Bangla Agricultural University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Sher-e-Bangla Agricultural University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "dhaka", link: "#" },
+
+    // 10. Bangladesh University of Professionals (BUP)
+    { uni: "Bangladesh University of Professionals", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Bangladesh University of Professionals", degree: "MSc/PhD", field: "Engineering", type: "public", division: "dhaka", link: "#" },
+    { uni: "Bangladesh University of Professionals", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "dhaka", link: "#" },
+
+    // 11. Bangabandhu Sheikh Mujib Medical University (BSMMU) - Science related
+    { uni: "Bangabandhu Sheikh Mujib Medical University", degree: "MSc/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
+
+
+    // =============================================
+    // ===== PRIVATE UNIVERSITIES =====
+    // =============================================
+
+    // 1. BRAC University
+    { uni: "BRAC University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "BRAC University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "BRAC University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 2. North South University
+    { uni: "North South University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "North South University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "North South University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 3. American International University - Bangladesh (AIUB)
+    { uni: "American International University", degree: "MSc/MPhil/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "American International University", degree: "MSc/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "American International University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 4. Independent University Bangladesh (IUB)
+    { uni: "Independent University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Independent University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "Independent University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 5. United International University (UIU)
+    { uni: "United International University", degree: "MSc/MPhil/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "United International University", degree: "MSc/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "United International University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 6. East West University
+    { uni: "East West University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "East West University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "East West University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 7. Daffodil International University
+    { uni: "Daffodil International University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Daffodil International University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "Daffodil International University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 8. ASA University
+    { uni: "ASA University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "ASA University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "ASA University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 9. City University
+    { uni: "City University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "City University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "City University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 10. Stamford University Bangladesh
+    { uni: "Stamford University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Stamford University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "Stamford University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 11. Southeast University
+    { uni: "Southeast University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Southeast University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "Southeast University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 12. Ahsanullah University of Science and Technology (AUST)
+    { uni: "Ahsanullah University of Science and Technology", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Ahsanullah University of Science and Technology", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "Ahsanullah University of Science and Technology", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 13. Military Institute of Science and Technology (MIST)
+    { uni: "Military Institute of Science and Technology", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Military Institute of Science and Technology", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "Military Institute of Science and Technology", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 14. Bangladesh Army University of Science and Technology (BAUST)
+    { uni: "Bangladesh Army University of Science and Technology", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Bangladesh Army University of Science and Technology", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "Bangladesh Army University of Science and Technology", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 15. Primeasia University
+    { uni: "Primeasia University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Primeasia University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "Primeasia University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 16. Northern University Bangladesh
+    { uni: "Northern University Bangladesh", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Northern University Bangladesh", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "Northern University Bangladesh", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 17. Gono University
+    { uni: "Gono University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Gono University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+    { uni: "Gono University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+
+    // 18. State University of Bangladesh
+    { uni: "State University of Bangladesh", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "State University of Bangladesh", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "State University of Bangladesh", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 19. Green University of Bangladesh
+    { uni: "Green University of Bangladesh", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Green University of Bangladesh", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "Green University of Bangladesh", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 20. Bangladesh Navy Academy
+    { uni: "Bangladesh Navy Academy", degree: "MSc/MPhil/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "Bangladesh Navy Academy", degree: "MSc/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Bangladesh Navy Academy", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 21. Bangladesh University (Private)
+    { uni: "Bangladesh University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Bangladesh University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "Bangladesh University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 22. Presidency University
+    { uni: "Presidency University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Presidency University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "Presidency University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 23. Bangladesh University of Business & Technology (BUBT)
+    { uni: "Bangladesh University of Business & Technology", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Bangladesh University of Business & Technology", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "Bangladesh University of Business & Technology", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 24. World University of Bangladesh
+    { uni: "World University of Bangladesh", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "World University of Bangladesh", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+    { uni: "World University of Bangladesh", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "dhaka", link: "#" },
+
+    // 25. European University of Bangladesh
+    { uni: "European University of Bangladesh", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "European University of Bangladesh", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+
+    // 26. Royal University of Dhaka
+    { uni: "Royal University of Dhaka", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Royal University of Dhaka", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+
+    // 27. Dhaka International University
+    { uni: "Dhaka International University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Dhaka International University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+
+    // 28. South Asian University
+    { uni: "South Asian University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "South Asian University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+
+    // 29. Bangladesh Islami University
+    { uni: "Bangladesh Islami University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+
+    // 30. The Millenium University
+    { uni: "The Millenium University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "The Millenium University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+
+    // 31. Dhaka College of Science & Technology (Private)
+    { uni: "Dhaka College of Science & Technology", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Dhaka College of Science & Technology", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+
+    // 32. Hamdard University Bangladesh
+    { uni: "Hamdard University Bangladesh", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+
+    // 33. Z. H. Sikder University of Science & Technology
+    { uni: "Z. H. Sikder University of Science & Technology", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Z. H. Sikder University of Science & Technology", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+
+    // 34. Bangabandhu University (Private)
+    { uni: "Bangabandhu University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Bangabandhu University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+
+    // 35. Islami Bank University (Private)
+    { uni: "Islami Bank University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "dhaka", link: "#" },
+
+    // 36. Bangladesh University of Engineering & Technology (private campus)
+    { uni: "BUET (Private Campus)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "dhaka", link: "#" },
+
+
+    // =============================================
+    // ===== COLLEGES AFFILIATED WITH NATIONAL UNIVERSITY =====
+    // =============================================
+
+    // Government Colleges
+    { uni: "Dhaka College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Dhaka College", degree: "MSc", field: "Physical Sciences", type: "public", division: "dhaka", link: "#" },
+    { uni: "Government Titumir College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Government Titumir College", degree: "MSc", field: "Physical Sciences", type: "public", division: "dhaka", link: "#" },
+    { uni: "Government Bangla College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Government Bangla College", degree: "MSc", field: "Physical Sciences", type: "public", division: "dhaka", link: "#" },
+    { uni: "Begum Badrunnessa Government Women's College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Dhaka Women's College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Government Haraganga College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Government Saadat College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Kabi Nazrul Government College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Tejgaon College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Mirpur College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Cantonment Public School & College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Adamjee Cantonment College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "BAF Shaheen College Dhaka", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Shahid Ramiz Uddin Cantonment College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Motijheel Govt. Boys' High School & College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Government Laboratory High School & College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Birshreshtha Noor Mohammad Public College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Dhaka Residential Model College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Mohammadpur Model School & College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Khilgaon Model School and College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Mirpur Girls' Ideal School and College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Mohammadpur Girls' College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Dhaka Model College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Dhaka Government College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Dania College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Postal Colony College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Jagannath University (former college)", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Kishoreganj Government College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Manikganj Government College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+
+    // Non-Government Colleges (Private)
+    { uni: "Rajuk Uttara Model College", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Notre Dame College", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Holy Cross College", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "St. Joseph Higher Secondary School", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Viqarunnisa Noon School & College", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Dhaka Imperial College", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Dhaka City College", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Dhaka Commerce College", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "IBN Taimiya School and College", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Mohammadpur Central College", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Dhaka College of Commerce", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Hazi Ibrahim College", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Uttara University College", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Dhaka Residential School & College", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Mirpur Bangla School & College", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Monipur High School & College", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Manikganj Model College", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+
+
+    // =============================================
+    // ===== COLLEGES AFFILIATED WITH UNIVERSITY OF DHAKA =====
+    // =============================================
+
+    { uni: "Dhaka College (Affiliated with DU)", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Government Titumir College (Affiliated with DU)", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Government Bangla College (Affiliated with DU)", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Begum Badrunnessa Government Women's College (Affiliated with DU)", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Dhaka Women's College (Affiliated with DU)", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Kabi Nazrul Government College (Affiliated with DU)", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Notre Dame College (Affiliated with DU)", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Holy Cross College (Affiliated with DU)", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "St. Joseph Higher Secondary School (Affiliated with DU)", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Viqarunnisa Noon School & College (Affiliated with DU)", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "Dhaka City College (Affiliated with DU)", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+    { uni: "IBN Taimiya School and College (Affiliated with DU)", degree: "MSc", field: "Science", type: "private", division: "dhaka", link: "#" },
+
+
+    // =============================================
+    // ===== COLLEGES AFFILIATED WITH JAHANGIRNAGAR UNIVERSITY =====
+    // =============================================
+
+    { uni: "Jahangirnagar University College (Affiliated with JU)", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Savar College (Affiliated with JU)", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+
+
+    // =============================================
+    // ===== COLLEGES AFFILIATED WITH ISLAMIC UNIVERSITY =====
+    // =============================================
+
+    { uni: "Islamic University College (Affiliated with IU)", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+
+
+    // =============================================
+    // ===== COLLEGES AFFILIATED WITH BUP =====
+    // =============================================
+
+    { uni: "Bangladesh University of Professionals College (Affiliated with BUP)", degree: "MSc", field: "Science", type: "public", division: "dhaka", link: "#" },
+
+
+    // =============================================
+    // ===== RESEARCH INSTITUTES (Offering PhD) =====
+    // =============================================
+
+    // Bangladesh Council of Scientific and Industrial Research (BCSIR)
+    { uni: "BCSIR", degree: "MSc/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "BCSIR", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "dhaka", link: "#" },
+
+    // Bangladesh Atomic Energy Commission (BAEC)
+    { uni: "Bangladesh Atomic Energy Commission", degree: "MSc/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
+    { uni: "Bangladesh Atomic Energy Commission", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "dhaka", link: "#" },
+
+    // Bangladesh Agricultural Research Institute (BARI)
+    { uni: "Bangladesh Agricultural Research Institute", degree: "MSc/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
+
+    // International Centre for Diarrhoeal Disease Research, Bangladesh (ICDDR,B)
+    { uni: "ICDDR,B", degree: "MSc/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
+
+    // Bangladesh Rice Research Institute (BRRI)
+    { uni: "Bangladesh Rice Research Institute", degree: "MSc/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
+
+    // Bangladesh Forest Research Institute (BFRI)
+    { uni: "Bangladesh Forest Research Institute", degree: "MSc/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
+
+    // Bangladesh Fisheries Research Institute (BFRI)
+    { uni: "Bangladesh Fisheries Research Institute", degree: "MSc/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
+
+    // Bangladesh Jute Research Institute (BJRI)
+    { uni: "Bangladesh Jute Research Institute", degree: "MSc/PhD", field: "Science", type: "public", division: "dhaka", link: "#" },
+
+             // 1. University of Chittagong
+    { uni: "University of Chittagong", degree: "MSc/MPhil", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "University of Chittagong", degree: "MSc/PhD", field: "Engineering", type: "public", division: "chittagong", link: "#" },
+    { uni: "University of Chittagong", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "chittagong", link: "#" },
+
+    // 2. Chittagong University of Engineering & Technology (CUET)
+    { uni: "Chittagong University of Engineering & Technology", degree: "MSc/MPhil/PhD", field: "Engineering", type: "public", division: "chittagong", link: "#" },
+    { uni: "Chittagong University of Engineering & Technology", degree: "MSc/PhD", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Chittagong University of Engineering & Technology", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "chittagong", link: "#" },
+
+    // 3. Chittagong Veterinary and Animal Sciences University (CVASU)
+    { uni: "Chittagong Veterinary and Animal Sciences University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Chittagong Veterinary and Animal Sciences University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "chittagong", link: "#" },
+
+    // 4. University of Science & Technology Chittagong (USTC)
+    { uni: "University of Science & Technology Chittagong", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "University of Science & Technology Chittagong", degree: "MSc/PhD", field: "Engineering", type: "public", division: "chittagong", link: "#" },
+    { uni: "University of Science & Technology Chittagong", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "chittagong", link: "#" },
+
+    // 5. Chittagong University of Commerce
+    { uni: "Chittagong University of Commerce", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Chittagong University of Commerce", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "chittagong", link: "#" },
+
+    // 6. Noakhali Science and Technology University (NSTU)
+    { uni: "Noakhali Science and Technology University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Noakhali Science and Technology University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "chittagong", link: "#" },
+    { uni: "Noakhali Science and Technology University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "chittagong", link: "#" },
+
+    // 7. Cox's Bazar University
+    { uni: "Cox's Bazar University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Cox's Bazar University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "chittagong", link: "#" },
+    { uni: "Cox's Bazar University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "chittagong", link: "#" },
+
+    // 8. Bangabandhu Sheikh Mujibur Rahman Maritime University (BSMRMU)
+    { uni: "Bangabandhu Sheikh Mujibur Rahman Maritime University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Bangabandhu Sheikh Mujibur Rahman Maritime University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "chittagong", link: "#" },
+    { uni: "Bangabandhu Sheikh Mujibur Rahman Maritime University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "chittagong", link: "#" },
+
+    // 9. Chattogram Medical University (Science related)
+    { uni: "Chattogram Medical University", degree: "MSc/PhD", field: "Science", type: "public", division: "chittagong", link: "#" },
+
+    // 10. Chattogram University of Engineering (CUE)
+    { uni: "Chattogram University of Engineering", degree: "MSc/MPhil/PhD", field: "Engineering", type: "public", division: "chittagong", link: "#" },
+
+    // 11. Chittagong Agricultural University
+    { uni: "Chittagong Agricultural University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "chittagong", link: "#" },
+
+    // 12. Bangladesh Institute of Technology (BIT) - Chittagong
+    { uni: "Bangladesh Institute of Technology - Chittagong", degree: "MSc/MPhil/PhD", field: "Engineering", type: "public", division: "chittagong", link: "#" },
+
+    // 13. Chittagong University (Institute of Forestry)
+    { uni: "Chittagong University (Institute of Forestry)", degree: "MSc/PhD", field: "Science", type: "public", division: "chittagong", link: "#" },
+
+    // 14. Chittagong University (Institute of Marine Sciences)
+    { uni: "Chittagong University (Institute of Marine Sciences)", degree: "MSc/PhD", field: "Science", type: "public", division: "chittagong", link: "#" },
+
+
+    // =============================================
+    // ===== PRIVATE UNIVERSITIES =====
+    // =============================================
+
+    // 1. International Islamic University Chittagong (IIUC)
+    { uni: "International Islamic University Chittagong", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "International Islamic University Chittagong", degree: "MSc/PhD", field: "Engineering", type: "private", division: "chittagong", link: "#" },
+    { uni: "International Islamic University Chittagong", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "chittagong", link: "#" },
+
+    // 2. Premier University Chittagong
+    { uni: "Premier University Chittagong", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "Premier University Chittagong", degree: "MSc/PhD", field: "Engineering", type: "private", division: "chittagong", link: "#" },
+    { uni: "Premier University Chittagong", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "chittagong", link: "#" },
+
+    // 3. University of Creative Technology Chittagong (UCTC)
+    { uni: "University of Creative Technology Chittagong", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "University of Creative Technology Chittagong", degree: "MSc/PhD", field: "Engineering", type: "private", division: "chittagong", link: "#" },
+    { uni: "University of Creative Technology Chittagong", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "chittagong", link: "#" },
+
+    // 4. Port City International University
+    { uni: "Port City International University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "Port City International University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "chittagong", link: "#" },
+    { uni: "Port City International University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "chittagong", link: "#" },
+
+    // 5. Southern University Bangladesh
+    { uni: "Southern University Bangladesh", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "Southern University Bangladesh", degree: "MSc/PhD", field: "Engineering", type: "private", division: "chittagong", link: "#" },
+    { uni: "Southern University Bangladesh", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "chittagong", link: "#" },
+
+    // 6. Chittagong Independent University (CIU)
+    { uni: "Chittagong Independent University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "Chittagong Independent University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "chittagong", link: "#" },
+    { uni: "Chittagong Independent University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "chittagong", link: "#" },
+
+    // 7. BGC Trust University Bangladesh
+    { uni: "BGC Trust University Bangladesh", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "BGC Trust University Bangladesh", degree: "MSc/PhD", field: "Engineering", type: "private", division: "chittagong", link: "#" },
+    { uni: "BGC Trust University Bangladesh", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "chittagong", link: "#" },
+
+    // 8. East Delta University
+    { uni: "East Delta University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "East Delta University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "chittagong", link: "#" },
+    { uni: "East Delta University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "chittagong", link: "#" },
+
+    // 9. Bangladesh University of South East Asia
+    { uni: "Bangladesh University of South East Asia", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "Bangladesh University of South East Asia", degree: "MSc/PhD", field: "Engineering", type: "private", division: "chittagong", link: "#" },
+    { uni: "Bangladesh University of South East Asia", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "chittagong", link: "#" },
+
+    // 10. Feni University
+    { uni: "Feni University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "Feni University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "chittagong", link: "#" },
+    { uni: "Feni University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "chittagong", link: "#" },
+
+    // 11. Chittagong Science & Technology University (Private)
+    { uni: "Chittagong Science & Technology University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "Chittagong Science & Technology University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "chittagong", link: "#" },
+
+    // 12. University of Information Technology & Sciences (UITS) - Chittagong Campus
+    { uni: "University of Information Technology & Sciences (Chittagong)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "University of Information Technology & Sciences (Chittagong)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "chittagong", link: "#" },
+
+    // 13. Asian University for Women (AUW) - Chittagong
+    { uni: "Asian University for Women (Chittagong)", degree: "MSc/PhD", field: "Science", type: "private", division: "chittagong", link: "#" },
+
+    // 14. Chittagong Medical University (Private)
+    { uni: "Chittagong Medical University (Private)", degree: "MSc/PhD", field: "Science", type: "private", division: "chittagong", link: "#" },
+
+
+    // =============================================
+    // ===== COLLEGES AFFILIATED WITH NATIONAL UNIVERSITY =====
+    // =============================================
+
+    // Government Colleges
+    { uni: "Chittagong College", degree: "MSc", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Chittagong College", degree: "MSc", field: "Physical Sciences", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government Hazi Mohammad Mohsin College", degree: "MSc", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government Hazi Mohammad Mohsin College", degree: "MSc", field: "Physical Sciences", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government City College, Chittagong", degree: "MSc", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government City College, Chittagong", degree: "MSc", field: "Physical Sciences", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government Commerce College, Chittagong", degree: "MSc", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government Commerce College, Chittagong", degree: "MSc", field: "Physical Sciences", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government Muslim High School & College", degree: "MSc", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government Hazi Abdul Latif College", degree: "MSc", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government M.A. Aziz College", degree: "MSc", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government Nur Ahmed College", degree: "MSc", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government Satkania College", degree: "MSc", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government Lohagara College", degree: "MSc", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government Patiya College", degree: "MSc", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government Rangunia College", degree: "MSc", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government Sandwip College", degree: "MSc", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government Cox's Bazar College", degree: "MSc", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government Cox's Bazar College", degree: "MSc", field: "Physical Sciences", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government Noakhali College", degree: "MSc", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government Noakhali College", degree: "MSc", field: "Physical Sciences", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government Feni College", degree: "MSc", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government Feni College", degree: "MSc", field: "Physical Sciences", type: "public", division: "chittagong", link: "#" },
+
+    // Non-Government Colleges (Private)
+    { uni: "Chittagong Collegiate School & College", degree: "MSc", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "Chittagong Collegiate School & College", degree: "MSc", field: "Physical Sciences", type: "private", division: "chittagong", link: "#" },
+    { uni: "Bakalia Government High School & College", degree: "MSc", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "Ispahani Public School & College", degree: "MSc", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "BIAM Laboratory School & College", degree: "MSc", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "Chittagong Cantonment Public School & College", degree: "MSc", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "BAF Shaheen College, Chittagong", degree: "MSc", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "Agrabad Government High School & College", degree: "MSc", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "Chittagong Ideal School & College", degree: "MSc", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "Dr. Khastagir Government High School & College", degree: "MSc", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "Nasirabad Government High School & College", degree: "MSc", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "Feni City College", degree: "MSc", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "Noakhali Ideal College", degree: "MSc", field: "Science", type: "private", division: "chittagong", link: "#" },
+    { uni: "Cox's Bazar City College", degree: "MSc", field: "Science", type: "private", division: "chittagong", link: "#" },
+
+
+    // =============================================
+    // ===== COLLEGES AFFILIATED WITH UNIVERSITY OF CHITTAGONG =====
+    // =============================================
+
+    { uni: "Chittagong College (Affiliated with CU)", degree: "MSc", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government Hazi Mohammad Mohsin College (Affiliated with CU)", degree: "MSc", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Government City College (Affiliated with CU)", degree: "MSc", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "Chittagong Collegiate School & College (Affiliated with CU)", degree: "MSc", field: "Science", type: "private", division: "chittagong", link: "#" },
+
+
+    // =============================================
+    // ===== RESEARCH INSTITUTES =====
+    // =============================================
+
+    // Bangladesh Council of Scientific and Industrial Research (BCSIR) - Chittagong Lab
+    { uni: "BCSIR - Chittagong Lab", degree: "MSc/PhD", field: "Science", type: "public", division: "chittagong", link: "#" },
+    { uni: "BCSIR - Chittagong Lab", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "chittagong", link: "#" },
+
+    // Bangladesh Agricultural Research Institute (BARI) - Chittagong
+    { uni: "BARI - Chittagong", degree: "MSc/PhD", field: "Science", type: "public", division: "chittagong", link: "#" },
+
+    // Bangladesh Fisheries Research Institute (BFRI) - Chittagong
+    { uni: "BFRI - Chittagong", degree: "MSc/PhD", field: "Science", type: "public", division: "chittagong", link: "#" },
+
+    // Bangladesh Marine Fisheries Research Institute - Cox's Bazar
+    { uni: "Bangladesh Marine Fisheries Research Institute - Cox's Bazar", degree: "MSc/PhD", field: "Science", type: "public", division: "chittagong", link: "#" },
+
+    // Forest Research Institute - Chittagong
+    { uni: "Forest Research Institute - Chittagong", degree: "MSc/PhD", field: "Science", type: "public", division: "chittagong", link: "#" },
+
+    // Chittagong Medical College Research Wing
+    { uni: "Chittagong Medical College (Research)", degree: "MSc/PhD", field: "Science", type: "public", division: "chittagong", link: "#" },
+
+    // Marine Academy - Chittagong
+    { uni: "Marine Academy - Chittagong", degree: "MSc/PhD", field: "Engineering", type: "public", division: "chittagong", link: "#" },
+    { uni: "Marine Academy - Chittagong", degree: "MSc/PhD", field: "Science", type: "public", division: "chittagong", link: "#" },
+
+            // 1. University of Rajshahi
+    { uni: "University of Rajshahi", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "University of Rajshahi", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rajshahi", link: "#" },
+    { uni: "University of Rajshahi", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rajshahi", link: "#" },
+
+    // 2. Rajshahi University of Engineering & Technology (RUET)
+    { uni: "Rajshahi University of Engineering & Technology", degree: "MSc/MPhil/PhD", field: "Engineering", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Rajshahi University of Engineering & Technology", degree: "MSc/PhD", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Rajshahi University of Engineering & Technology", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rajshahi", link: "#" },
+
+    // 3. Rajshahi Medical University (Science related)
+    { uni: "Rajshahi Medical University", degree: "MSc/PhD", field: "Science", type: "public", division: "rajshahi", link: "#" },
+
+    // 4. Bangladesh Agricultural University (BAU)
+    { uni: "Bangladesh Agricultural University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Bangladesh Agricultural University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Bangladesh Agricultural University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rajshahi", link: "#" },
+
+    // 5. Pabna University of Science & Technology (PUST)
+    { uni: "Pabna University of Science & Technology", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Pabna University of Science & Technology", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Pabna University of Science & Technology", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rajshahi", link: "#" },
+
+    // 6. Rajshahi University of Science & Technology (RUST)
+    { uni: "Rajshahi University of Science & Technology", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Rajshahi University of Science & Technology", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Rajshahi University of Science & Technology", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rajshahi", link: "#" },
+
+    // 7. Islamic University (IU) - Kushtia
+    { uni: "Islamic University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Islamic University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Islamic University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rajshahi", link: "#" },
+
+    // 8. National University Bangladesh (Rajshahi Campus)
+    { uni: "National University Bangladesh (Rajshahi Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "National University Bangladesh (Rajshahi Campus)", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rajshahi", link: "#" },
+    { uni: "National University Bangladesh (Rajshahi Campus)", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rajshahi", link: "#" },
+
+    // 9. Naogaon University
+    { uni: "Naogaon University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Naogaon University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Naogaon University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rajshahi", link: "#" },
+
+    // 10. Sirajganj University
+    { uni: "Sirajganj University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Sirajganj University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Sirajganj University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rajshahi", link: "#" },
+
+    // 11. Shah Makhdum University (Rajshahi)
+    { uni: "Shah Makhdum University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Shah Makhdum University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rajshahi", link: "#" },
+
+    // 12. Bangabandhu Sheikh Mujibur Rahman Agricultural University (BSMRAU) - Rajshahi
+    { uni: "Bangabandhu Sheikh Mujibur Rahman Agricultural University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Bangabandhu Sheikh Mujibur Rahman Agricultural University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rajshahi", link: "#" },
+
+    // 13. Rajshahi College (Affiliated with NU but offering MSc)
+    { uni: "Rajshahi College", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Rajshahi College", degree: "MSc", field: "Physical Sciences", type: "public", division: "rajshahi", link: "#" },
+
+    // 14. Edward College, Pabna
+    { uni: "Edward College, Pabna", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Edward College, Pabna", degree: "MSc", field: "Physical Sciences", type: "public", division: "rajshahi", link: "#" },
+
+    // 15. Ishwardi College
+    { uni: "Ishwardi College", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+
+    // 16. Barendra College, Rajshahi
+    { uni: "Barendra College, Rajshahi", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+
+    // 17. Govt. Azizul Haque College, Bogra
+    { uni: "Govt. Azizul Haque College, Bogra", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Govt. Azizul Haque College, Bogra", degree: "MSc", field: "Physical Sciences", type: "public", division: "rajshahi", link: "#" },
+
+    // 18. Govt. Shah Sultan College, Bogra
+    { uni: "Govt. Shah Sultan College, Bogra", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+
+    // 19. Govt. Saheed Bulbul College, Pabna
+    { uni: "Govt. Saheed Bulbul College, Pabna", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+
+    // 20. Govt. Nandail College
+    { uni: "Govt. Nandail College", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+
+    // 21. Govt. Mahbubur Rahman College, Chapainawabganj
+    { uni: "Govt. Mahbubur Rahman College, Chapainawabganj", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+
+
+    // =============================================
+    // ===== PRIVATE UNIVERSITIES =====
+    // =============================================
+
+    // 1. Rajshahi Science & Technology University (RSTU)
+    { uni: "Rajshahi Science & Technology University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Rajshahi Science & Technology University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Rajshahi Science & Technology University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "rajshahi", link: "#" },
+
+    // 2. State University of Bangladesh (Rajshahi Campus)
+    { uni: "State University of Bangladesh (Rajshahi)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "rajshahi", link: "#" },
+    { uni: "State University of Bangladesh (Rajshahi)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "rajshahi", link: "#" },
+    { uni: "State University of Bangladesh (Rajshahi)", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "rajshahi", link: "#" },
+
+    // 3. North Bengal International University
+    { uni: "North Bengal International University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "rajshahi", link: "#" },
+    { uni: "North Bengal International University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "rajshahi", link: "#" },
+    { uni: "North Bengal International University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "rajshahi", link: "#" },
+
+    // 4. Varendra University
+    { uni: "Varendra University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Varendra University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Varendra University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "rajshahi", link: "#" },
+
+    // 5. Bangladesh University (Rajshahi Campus)
+    { uni: "Bangladesh University (Rajshahi)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Bangladesh University (Rajshahi)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Bangladesh University (Rajshahi)", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "rajshahi", link: "#" },
+
+    // 6. Natore University
+    { uni: "Natore University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Natore University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Natore University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "rajshahi", link: "#" },
+
+    // 7. Bogra University
+    { uni: "Bogra University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Bogra University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Bogra University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "rajshahi", link: "#" },
+
+    // 8. Rajshahi University (Private Campus)
+    { uni: "Rajshahi University (Private Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Rajshahi University (Private Campus)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "rajshahi", link: "#" },
+
+    // 9. Islamic University (Private Campus) - Kushtia
+    { uni: "Islamic University (Private Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Islamic University (Private Campus)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "rajshahi", link: "#" },
+
+    // 10. Pabna International University
+    { uni: "Pabna International University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Pabna International University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "rajshahi", link: "#" },
+
+    // 11. Rajshahi City College (Private)
+    { uni: "Rajshahi City College", degree: "MSc", field: "Science", type: "private", division: "rajshahi", link: "#" },
+
+    // 12. Bogra City College (Private)
+    { uni: "Bogra City College", degree: "MSc", field: "Science", type: "private", division: "rajshahi", link: "#" },
+
+
+    // =============================================
+    // ===== COLLEGES AFFILIATED WITH NATIONAL UNIVERSITY =====
+    // =============================================
+
+    // Government Colleges
+    { uni: "Rajshahi College", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Rajshahi College", degree: "MSc", field: "Physical Sciences", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Edward College, Pabna", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Edward College, Pabna", degree: "MSc", field: "Physical Sciences", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Govt. Azizul Haque College, Bogra", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Govt. Azizul Haque College, Bogra", degree: "MSc", field: "Physical Sciences", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Govt. Shah Sultan College, Bogra", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Govt. Saheed Bulbul College, Pabna", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Govt. Nandail College", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Govt. Mahbubur Rahman College, Chapainawabganj", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Govt. Nawabganj College", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Govt. Natore College", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Govt. Sirajganj College", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Govt. Sirajganj College", degree: "MSc", field: "Physical Sciences", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Govt. Naogaon College", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Govt. Naogaon College", degree: "MSc", field: "Physical Sciences", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Govt. Joypurhat College", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Govt. Chapainawabganj College", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+
+    // Non-Government Colleges (Private)
+    { uni: "Rajshahi City College", degree: "MSc", field: "Science", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Rajshahi Cantonment Public School & College", degree: "MSc", field: "Science", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Bogra Cantonment Public School & College", degree: "MSc", field: "Science", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Bogra City College", degree: "MSc", field: "Science", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Pabna Cantonment Public School & College", degree: "MSc", field: "Science", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Natore Cantonment Public School & College", degree: "MSc", field: "Science", type: "private", division: "rajshahi", link: "#" },
+    { uni: "BIAM Laboratory School & College, Rajshahi", degree: "MSc", field: "Science", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Rajshahi Collegiate School & College", degree: "MSc", field: "Science", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Pabna Collegiate School & College", degree: "MSc", field: "Science", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Bogra Collegiate School & College", degree: "MSc", field: "Science", type: "private", division: "rajshahi", link: "#" },
+    { uni: "Rajshahi Model School & College", degree: "MSc", field: "Science", type: "private", division: "rajshahi", link: "#" },
+
+
+    // =============================================
+    // ===== COLLEGES AFFILIATED WITH UNIVERSITY OF RAJSHAHI =====
+    // =============================================
+
+    { uni: "Rajshahi College (Affiliated with RU)", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Edward College, Pabna (Affiliated with RU)", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Govt. Azizul Haque College, Bogra (Affiliated with RU)", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Govt. Shah Sultan College, Bogra (Affiliated with RU)", degree: "MSc", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "Rajshahi City College (Affiliated with RU)", degree: "MSc", field: "Science", type: "private", division: "rajshahi", link: "#" },
+
+
+    // =============================================
+    // ===== RESEARCH INSTITUTES =====
+    // =============================================
+
+    // Bangladesh Agricultural Research Institute (BARI) - Rajshahi
+    { uni: "BARI - Rajshahi", degree: "MSc/PhD", field: "Science", type: "public", division: "rajshahi", link: "#" },
+
+    // Bangladesh Council of Scientific and Industrial Research (BCSIR) - Rajshahi Lab
+    { uni: "BCSIR - Rajshahi Lab", degree: "MSc/PhD", field: "Science", type: "public", division: "rajshahi", link: "#" },
+    { uni: "BCSIR - Rajshahi Lab", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rajshahi", link: "#" },
+
+    // Bangladesh Rice Research Institute (BRRI) - Rajshahi
+    { uni: "BRRI - Rajshahi", degree: "MSc/PhD", field: "Science", type: "public", division: "rajshahi", link: "#" },
+
+    // Soil Research Institute - Rajshahi
+    { uni: "Soil Research Institute - Rajshahi", degree: "MSc/PhD", field: "Science", type: "public", division: "rajshahi", link: "#" },
+
+    // Nuclear Agriculture Research Institute - Rajshahi
+    { uni: "Nuclear Agriculture Research Institute - Rajshahi", degree: "MSc/PhD", field: "Science", type: "public", division: "rajshahi", link: "#" },
+
+    // Rajshahi Medical College Research Wing
+    { uni: "Rajshahi Medical College (Research)", degree: "MSc/PhD", field: "Science", type: "public", division: "rajshahi", link: "#" },
+
+    // Sugar Crop Research Institute - Rajshahi
+    { uni: "Sugar Crop Research Institute - Rajshahi", degree: "MSc/PhD", field: "Science", type: "public", division: "rajshahi", link: "#" },
+
+                // 1. University of Khulna
+    { uni: "University of Khulna", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "University of Khulna", degree: "MSc/PhD", field: "Engineering", type: "public", division: "khulna", link: "#" },
+    { uni: "University of Khulna", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "khulna", link: "#" },
+
+    // 2. Khulna University of Engineering & Technology (KUET)
+    { uni: "Khulna University of Engineering & Technology", degree: "MSc/MPhil/PhD", field: "Engineering", type: "public", division: "khulna", link: "#" },
+    { uni: "Khulna University of Engineering & Technology", degree: "MSc/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Khulna University of Engineering & Technology", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "khulna", link: "#" },
+    { uni: "Khulna University of Engineering & Technology", degree: "MPhil/PhD", field: "Architecture", type: "public", division: "khulna", link: "#" },
+
+    // 3. Khulna Medical University (Science related)
+    { uni: "Khulna Medical University", degree: "MSc/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+
+    // 4. Jessore University of Science & Technology (JUST)
+    { uni: "Jessore University of Science & Technology", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Jessore University of Science & Technology", degree: "MSc/PhD", field: "Engineering", type: "public", division: "khulna", link: "#" },
+    { uni: "Jessore University of Science & Technology", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "khulna", link: "#" },
+
+    // 5. Bangabandhu Sheikh Mujibur Rahman Agricultural University (BSMRAU)
+    { uni: "Bangabandhu Sheikh Mujibur Rahman Agricultural University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Bangabandhu Sheikh Mujibur Rahman Agricultural University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "khulna", link: "#" },
+    { uni: "Bangabandhu Sheikh Mujibur Rahman Agricultural University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "khulna", link: "#" },
+
+    // 6. Bangabandhu Sheikh Mujibur Rahman Science & Technology University (BSMRSTU)
+    { uni: "Bangabandhu Sheikh Mujibur Rahman Science & Technology University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Bangabandhu Sheikh Mujibur Rahman Science & Technology University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "khulna", link: "#" },
+    { uni: "Bangabandhu Sheikh Mujibur Rahman Science & Technology University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "khulna", link: "#" },
+
+    // 7. Islamic University (IU) - Kushtia
+    { uni: "Islamic University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Islamic University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "khulna", link: "#" },
+    { uni: "Islamic University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "khulna", link: "#" },
+
+    // 8. National University Bangladesh (Khulna Campus)
+    { uni: "National University Bangladesh (Khulna Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "National University Bangladesh (Khulna Campus)", degree: "MSc/PhD", field: "Engineering", type: "public", division: "khulna", link: "#" },
+    { uni: "National University Bangladesh (Khulna Campus)", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "khulna", link: "#" },
+
+    // 9. Khulna Agricultural University
+    { uni: "Khulna Agricultural University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Khulna Agricultural University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "khulna", link: "#" },
+    { uni: "Khulna Agricultural University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "khulna", link: "#" },
+
+    // 10. Jashore University
+    { uni: "Jashore University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Jashore University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "khulna", link: "#" },
+    { uni: "Jashore University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "khulna", link: "#" },
+
+    // 11. Satkhira University
+    { uni: "Satkhira University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Satkhira University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "khulna", link: "#" },
+    { uni: "Satkhira University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "khulna", link: "#" },
+
+    // 12. Kushtia University
+    { uni: "Kushtia University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Kushtia University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "khulna", link: "#" },
+    { uni: "Kushtia University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "khulna", link: "#" },
+
+    // 13. Sundarban University (Khulna)
+    { uni: "Sundarban University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Sundarban University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "khulna", link: "#" },
+
+    // 14. Meherpur University
+    { uni: "Meherpur University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Meherpur University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "khulna", link: "#" },
+
+    // 15. Chuadanga University
+    { uni: "Chuadanga University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Chuadanga University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "khulna", link: "#" },
+
+    // 16. Jhenaidah University
+    { uni: "Jhenaidah University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Jhenaidah University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "khulna", link: "#" },
+
+    // 17. Bagerhat University
+    { uni: "Bagerhat University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Bagerhat University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "khulna", link: "#" },
+
+    // 18. Magura University
+    { uni: "Magura University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+
+    // 19. Narail University
+    { uni: "Narail University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+
+
+    // =============================================
+    // ===== PRIVATE UNIVERSITIES =====
+    // =============================================
+
+    // 1. North Western University
+    { uni: "North Western University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "khulna", link: "#" },
+    { uni: "North Western University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "khulna", link: "#" },
+    { uni: "North Western University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "khulna", link: "#" },
+
+    // 2. Khulna University of Science & Technology (Private)
+    { uni: "Khulna University of Science & Technology", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "khulna", link: "#" },
+    { uni: "Khulna University of Science & Technology", degree: "MSc/PhD", field: "Engineering", type: "private", division: "khulna", link: "#" },
+    { uni: "Khulna University of Science & Technology", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "khulna", link: "#" },
+
+    // 3. Bangladesh University (Khulna Campus)
+    { uni: "Bangladesh University (Khulna Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "khulna", link: "#" },
+    { uni: "Bangladesh University (Khulna Campus)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "khulna", link: "#" },
+    { uni: "Bangladesh University (Khulna Campus)", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "khulna", link: "#" },
+
+    // 4. State University of Bangladesh (Khulna Campus)
+    { uni: "State University of Bangladesh (Khulna Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "khulna", link: "#" },
+    { uni: "State University of Bangladesh (Khulna Campus)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "khulna", link: "#" },
+    { uni: "State University of Bangladesh (Khulna Campus)", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "khulna", link: "#" },
+
+    // 5. Royal University of Bangladesh
+    { uni: "Royal University of Bangladesh", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "khulna", link: "#" },
+    { uni: "Royal University of Bangladesh", degree: "MSc/PhD", field: "Engineering", type: "private", division: "khulna", link: "#" },
+    { uni: "Royal University of Bangladesh", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "khulna", link: "#" },
+
+    // 6. Khulna City University
+    { uni: "Khulna City University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "khulna", link: "#" },
+    { uni: "Khulna City University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "khulna", link: "#" },
+    { uni: "Khulna City University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "khulna", link: "#" },
+
+    // 7. Jessore University of Science & Technology (Private)
+    { uni: "Jessore University of Science & Technology (Private)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "khulna", link: "#" },
+    { uni: "Jessore University of Science & Technology (Private)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "khulna", link: "#" },
+    { uni: "Jessore University of Science & Technology (Private)", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "khulna", link: "#" },
+
+    // 8. Khulna International University
+    { uni: "Khulna International University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "khulna", link: "#" },
+    { uni: "Khulna International University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "khulna", link: "#" },
+    { uni: "Khulna International University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "khulna", link: "#" },
+
+    // 9. Islamic University (Private Campus) - Kushtia
+    { uni: "Islamic University (Private Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "khulna", link: "#" },
+    { uni: "Islamic University (Private Campus)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "khulna", link: "#" },
+
+    // 10. Khulna University (Private Campus)
+    { uni: "Khulna University (Private Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "khulna", link: "#" },
+    { uni: "Khulna University (Private Campus)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "khulna", link: "#" },
+
+    // 11. Sundarban City College (Private)
+    { uni: "Sundarban City College", degree: "MSc", field: "Science", type: "private", division: "khulna", link: "#" },
+
+
+    // =============================================
+    // ===== COLLEGES AFFILIATED WITH NATIONAL UNIVERSITY =====
+    // =============================================
+
+    // Government Colleges
+    { uni: "Khulna Government College", degree: "MSc", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Khulna Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "khulna", link: "#" },
+    { uni: "Khulna Government City College", degree: "MSc", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Khulna Government City College", degree: "MSc", field: "Physical Sciences", type: "public", division: "khulna", link: "#" },
+    { uni: "Kushtia Government College", degree: "MSc", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Kushtia Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "khulna", link: "#" },
+    { uni: "Jessore Government College", degree: "MSc", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Jessore Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "khulna", link: "#" },
+    { uni: "Satkhira Government College", degree: "MSc", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Satkhira Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "khulna", link: "#" },
+    { uni: "Jhenaidah Government College", degree: "MSc", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Bagerhat Government College", degree: "MSc", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Chuadanga Government College", degree: "MSc", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Magura Government College", degree: "MSc", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Narail Government College", degree: "MSc", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Meherpur Government College", degree: "MSc", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Khulna Government Women's College", degree: "MSc", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Kushtia Government Women's College", degree: "MSc", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Jessore Government Women's College", degree: "MSc", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Satkhira Government Women's College", degree: "MSc", field: "Science", type: "public", division: "khulna", link: "#" },
+
+    // Non-Government Colleges (Private)
+    { uni: "Khulna Collegiate School & College", degree: "MSc", field: "Science", type: "private", division: "khulna", link: "#" },
+    { uni: "Khulna Cantonment Public School & College", degree: "MSc", field: "Science", type: "private", division: "khulna", link: "#" },
+    { uni: "Jessore Cantonment Public School & College", degree: "MSc", field: "Science", type: "private", division: "khulna", link: "#" },
+    { uni: "Kushtia Cantonment Public School & College", degree: "MSc", field: "Science", type: "private", division: "khulna", link: "#" },
+    { uni: "Satkhira Cantonment Public School & College", degree: "MSc", field: "Science", type: "private", division: "khulna", link: "#" },
+    { uni: "Khulna Model School & College", degree: "MSc", field: "Science", type: "private", division: "khulna", link: "#" },
+    { uni: "Jhenaidah Model School & College", degree: "MSc", field: "Science", type: "private", division: "khulna", link: "#" },
+    { uni: "Bagerhat Model School & College", degree: "MSc", field: "Science", type: "private", division: "khulna", link: "#" },
+    { uni: "BIAM Laboratory School & College, Khulna", degree: "MSc", field: "Science", type: "private", division: "khulna", link: "#" },
+    { uni: "Kushtia Collegiate School & College", degree: "MSc", field: "Science", type: "private", division: "khulna", link: "#" },
+    { uni: "Jessore Collegiate School & College", degree: "MSc", field: "Science", type: "private", division: "khulna", link: "#" },
+    { uni: "Satkhira Collegiate School & College", degree: "MSc", field: "Science", type: "private", division: "khulna", link: "#" },
+
+
+    // =============================================
+    // ===== COLLEGES AFFILIATED WITH UNIVERSITY OF KHULNA =====
+    // =============================================
+
+    { uni: "Khulna Government College (Affiliated with KU)", degree: "MSc", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Khulna Government City College (Affiliated with KU)", degree: "MSc", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Khulna Collegiate School & College (Affiliated with KU)", degree: "MSc", field: "Science", type: "private", division: "khulna", link: "#" },
+
+
+    // =============================================
+    // ===== COLLEGES AFFILIATED WITH ISLAMIC UNIVERSITY =====
+    // =============================================
+
+    { uni: "Kushtia Government College (Affiliated with IU)", degree: "MSc", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "Jessore Government College (Affiliated with IU)", degree: "MSc", field: "Science", type: "public", division: "khulna", link: "#" },
+
+
+    // =============================================
+    // ===== RESEARCH INSTITUTES =====
+    // =============================================
+
+    // Bangladesh Council of Scientific and Industrial Research (BCSIR) - Khulna Lab
+    { uni: "BCSIR - Khulna Lab", degree: "MSc/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+    { uni: "BCSIR - Khulna Lab", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "khulna", link: "#" },
+
+    // Bangladesh Agricultural Research Institute (BARI) - Khulna
+    { uni: "BARI - Khulna", degree: "MSc/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+
+    // Bangladesh Rice Research Institute (BRRI) - Khulna
+    { uni: "BRRI - Khulna", degree: "MSc/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+
+    // Bangladesh Fisheries Research Institute (BFRI) - Khulna
+    { uni: "BFRI - Khulna", degree: "MSc/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+
+    // Sundarban Forest Research Institute - Khulna
+    { uni: "Sundarban Forest Research Institute", degree: "MSc/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+
+    // Soil Research Institute - Khulna
+    { uni: "Soil Research Institute - Khulna", degree: "MSc/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+
+    // Khulna Medical College Research Wing
+    { uni: "Khulna Medical College (Research)", degree: "MSc/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+
+    // Bangladesh Jute Research Institute (BJRI) - Khulna
+    { uni: "Bangladesh Jute Research Institute - Khulna", degree: "MSc/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+
+    // Marine Fisheries Research Institute - Khulna
+    { uni: "Marine Fisheries Research Institute - Khulna", degree: "MSc/PhD", field: "Science", type: "public", division: "khulna", link: "#" },
+
+            // 1. Shahjalal University of Science & Technology (SUST)
+    { uni: "Shahjalal University of Science & Technology", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "Shahjalal University of Science & Technology", degree: "MSc/PhD", field: "Engineering", type: "public", division: "sylhet", link: "#" },
+    { uni: "Shahjalal University of Science & Technology", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "sylhet", link: "#" },
+
+    // 2. Sylhet Agricultural University (SAU)
+    { uni: "Sylhet Agricultural University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "Sylhet Agricultural University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "sylhet", link: "#" },
+    { uni: "Sylhet Agricultural University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "sylhet", link: "#" },
+
+    // 3. Sylhet Medical University (Science related)
+    { uni: "Sylhet Medical University", degree: "MSc/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+
+    // 4. Sylhet University of Engineering & Technology (SUET)
+    { uni: "Sylhet University of Engineering & Technology", degree: "MSc/MPhil/PhD", field: "Engineering", type: "public", division: "sylhet", link: "#" },
+    { uni: "Sylhet University of Engineering & Technology", degree: "MSc/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "Sylhet University of Engineering & Technology", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "sylhet", link: "#" },
+    { uni: "Sylhet University of Engineering & Technology", degree: "MPhil/PhD", field: "Architecture", type: "public", division: "sylhet", link: "#" },
+
+    // 5. National University Bangladesh (Sylhet Campus)
+    { uni: "National University Bangladesh (Sylhet Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "National University Bangladesh (Sylhet Campus)", degree: "MSc/PhD", field: "Engineering", type: "public", division: "sylhet", link: "#" },
+    { uni: "National University Bangladesh (Sylhet Campus)", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "sylhet", link: "#" },
+
+    // 6. Bangladesh Army University of Science & Technology (BAUST) - Sylhet
+    { uni: "Bangladesh Army University of Science & Technology (Sylhet)", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "Bangladesh Army University of Science & Technology (Sylhet)", degree: "MSc/PhD", field: "Engineering", type: "public", division: "sylhet", link: "#" },
+    { uni: "Bangladesh Army University of Science & Technology (Sylhet)", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "sylhet", link: "#" },
+
+    // 7. Moulvibazar University
+    { uni: "Moulvibazar University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "Moulvibazar University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "sylhet", link: "#" },
+    { uni: "Moulvibazar University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "sylhet", link: "#" },
+
+    // 8. Habiganj University
+    { uni: "Habiganj University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "Habiganj University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "sylhet", link: "#" },
+    { uni: "Habiganj University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "sylhet", link: "#" },
+
+    // 9. Sunamganj University
+    { uni: "Sunamganj University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "Sunamganj University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "sylhet", link: "#" },
+    { uni: "Sunamganj University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "sylhet", link: "#" },
+
+    // 10. Shahjalal University (Sylhet City Campus)
+    { uni: "Shahjalal University (Sylhet City Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "Shahjalal University (Sylhet City Campus)", degree: "MSc/PhD", field: "Engineering", type: "public", division: "sylhet", link: "#" },
+    { uni: "Shahjalal University (Sylhet City Campus)", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "sylhet", link: "#" },
+
+    // 11. Sylhet Science & Technology University
+    { uni: "Sylhet Science & Technology University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "Sylhet Science & Technology University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "sylhet", link: "#" },
+
+    // 12. Bangladesh Tea Research Institute (BTRI) - Sylhet (affiliated)
+    { uni: "Bangladesh Tea Research Institute (Sylhet)", degree: "MSc/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+
+
+    // =============================================
+    // ===== PRIVATE UNIVERSITIES =====
+    // =============================================
+
+    // 1. Leading University
+    { uni: "Leading University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "Leading University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "sylhet", link: "#" },
+    { uni: "Leading University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "sylhet", link: "#" },
+
+    // 2. Sylhet International University
+    { uni: "Sylhet International University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "Sylhet International University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "sylhet", link: "#" },
+    { uni: "Sylhet International University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "sylhet", link: "#" },
+
+    // 3. Metropolitan University
+    { uni: "Metropolitan University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "Metropolitan University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "sylhet", link: "#" },
+    { uni: "Metropolitan University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "sylhet", link: "#" },
+
+    // 4. Shahjalal University of Science & Technology (Private)
+    { uni: "Shahjalal University of Science & Technology (Private)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "Shahjalal University of Science & Technology (Private)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "sylhet", link: "#" },
+    { uni: "Shahjalal University of Science & Technology (Private)", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "sylhet", link: "#" },
+
+    // 5. Bangladesh University (Sylhet Campus)
+    { uni: "Bangladesh University (Sylhet Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "Bangladesh University (Sylhet Campus)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "sylhet", link: "#" },
+    { uni: "Bangladesh University (Sylhet Campus)", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "sylhet", link: "#" },
+
+    // 6. State University of Bangladesh (Sylhet Campus)
+    { uni: "State University of Bangladesh (Sylhet Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "State University of Bangladesh (Sylhet Campus)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "sylhet", link: "#" },
+    { uni: "State University of Bangladesh (Sylhet Campus)", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "sylhet", link: "#" },
+
+    // 7. Sylhet University
+    { uni: "Sylhet University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "Sylhet University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "sylhet", link: "#" },
+    { uni: "Sylhet University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "sylhet", link: "#" },
+
+    // 8. North East University Bangladesh
+    { uni: "North East University Bangladesh", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "North East University Bangladesh", degree: "MSc/PhD", field: "Engineering", type: "private", division: "sylhet", link: "#" },
+    { uni: "North East University Bangladesh", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "sylhet", link: "#" },
+
+    // 9. Sylhet City University
+    { uni: "Sylhet City University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "Sylhet City University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "sylhet", link: "#" },
+    { uni: "Sylhet City University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "sylhet", link: "#" },
+
+    // 10. Green University of Bangladesh (Sylhet Campus)
+    { uni: "Green University of Bangladesh (Sylhet Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "Green University of Bangladesh (Sylhet Campus)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "sylhet", link: "#" },
+
+    // 11. Sylhet Science & Technology University (Private)
+    { uni: "Sylhet Science & Technology University (Private)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "Sylhet Science & Technology University (Private)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "sylhet", link: "#" },
+
+
+    // =============================================
+    // ===== COLLEGES AFFILIATED WITH NATIONAL UNIVERSITY =====
+    // =============================================
+
+    // Government Colleges
+    { uni: "Sylhet Government College", degree: "MSc", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "Sylhet Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "sylhet", link: "#" },
+    { uni: "Sylhet Government Women's College", degree: "MSc", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "Sylhet Government Women's College", degree: "MSc", field: "Physical Sciences", type: "public", division: "sylhet", link: "#" },
+    { uni: "Moulvibazar Government College", degree: "MSc", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "Moulvibazar Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "sylhet", link: "#" },
+    { uni: "Habiganj Government College", degree: "MSc", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "Habiganj Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "sylhet", link: "#" },
+    { uni: "Sunamganj Government College", degree: "MSc", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "Sunamganj Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "sylhet", link: "#" },
+    { uni: "Sylhet Government City College", degree: "MSc", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "Sylhet Government City College", degree: "MSc", field: "Physical Sciences", type: "public", division: "sylhet", link: "#" },
+    { uni: "Government M.A.G. Osmani College", degree: "MSc", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "Government M.A.G. Osmani College", degree: "MSc", field: "Physical Sciences", type: "public", division: "sylhet", link: "#" },
+    { uni: "Government K. M. College, Moulvibazar", degree: "MSc", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "Government K. M. College, Moulvibazar", degree: "MSc", field: "Physical Sciences", type: "public", division: "sylhet", link: "#" },
+    { uni: "Government Fatehpur College", degree: "MSc", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "Government B. A. F. Shaheen College", degree: "MSc", field: "Science", type: "public", division: "sylhet", link: "#" },
+
+    // Non-Government Colleges (Private)
+    { uni: "Sylhet Collegiate School & College", degree: "MSc", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "Sylhet Cantonment Public School & College", degree: "MSc", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "Sylhet Model School & College", degree: "MSc", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "BIAM Laboratory School & College, Sylhet", degree: "MSc", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "Moulvibazar Model School & College", degree: "MSc", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "Habiganj Model School & College", degree: "MSc", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "Sunamganj Model School & College", degree: "MSc", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "Sylhet Blue Bird School & College", degree: "MSc", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "Sylhet City College (Private)", degree: "MSc", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "Moulvibazar City College", degree: "MSc", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "Habiganj City College", degree: "MSc", field: "Science", type: "private", division: "sylhet", link: "#" },
+    { uni: "Sylhet Women's College", degree: "MSc", field: "Science", type: "private", division: "sylhet", link: "#" },
+
+
+    // =============================================
+    // ===== COLLEGES AFFILIATED WITH SHAHJALAL UNIVERSITY =====
+    // =============================================
+
+    { uni: "Sylhet Government College (Affiliated with SUST)", degree: "MSc", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "Sylhet Government Women's College (Affiliated with SUST)", degree: "MSc", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "Sylhet Collegiate School & College (Affiliated with SUST)", degree: "MSc", field: "Science", type: "private", division: "sylhet", link: "#" },
+
+
+    // =============================================
+    // ===== RESEARCH INSTITUTES =====
+    // =============================================
+
+    // Bangladesh Tea Research Institute (BTRI) - Sylhet
+    { uni: "Bangladesh Tea Research Institute (Sylhet)", degree: "MSc/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "Bangladesh Tea Research Institute (Sylhet)", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "sylhet", link: "#" },
+
+    // Bangladesh Council of Scientific and Industrial Research (BCSIR) - Sylhet Lab
+    { uni: "BCSIR - Sylhet Lab", degree: "MSc/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+    { uni: "BCSIR - Sylhet Lab", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "sylhet", link: "#" },
+
+    // Bangladesh Agricultural Research Institute (BARI) - Sylhet
+    { uni: "BARI - Sylhet", degree: "MSc/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+
+    // Bangladesh Rice Research Institute (BRRI) - Sylhet
+    { uni: "BRRI - Sylhet", degree: "MSc/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+
+    // Bangladesh Fisheries Research Institute (BFRI) - Sylhet
+    { uni: "BFRI - Sylhet", degree: "MSc/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+
+    // Sylhet Medical College Research Wing
+    { uni: "Sylhet Medical College (Research)", degree: "MSc/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+
+    // Soil Research Institute - Sylhet
+    { uni: "Soil Research Institute - Sylhet", degree: "MSc/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+
+    // Bangladesh Forest Research Institute (BFRI) - Sylhet
+    { uni: "Bangladesh Forest Research Institute - Sylhet", degree: "MSc/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+
+    // Spices Research Institute - Sylhet
+    { uni: "Spices Research Institute - Sylhet", degree: "MSc/PhD", field: "Science", type: "public", division: "sylhet", link: "#" },
+
+            // 1. University of Barishal
+    { uni: "University of Barishal", degree: "MSc/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "University of Barishal", degree: "MSc/MPhil", field: "Engineering", type: "public", division: "barishal", link: "#" },
+    { uni: "University of Barishal", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "barishal", link: "#" },
+
+    // 2. Patuakhali Science & Technology University (PSTU)
+    { uni: "Patuakhali Science & Technology University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "Patuakhali Science & Technology University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "barishal", link: "#" },
+    { uni: "Patuakhali Science & Technology University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "barishal", link: "#" },
+
+    // 3. Barishal Agricultural University
+    { uni: "Barishal Agricultural University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "Barishal Agricultural University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "barishal", link: "#" },
+    { uni: "Barishal Agricultural University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "barishal", link: "#" },
+
+    // 4. Barishal Medical University (Science related)
+    { uni: "Barishal Medical University", degree: "MSc/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+
+    // 5. Bangabandhu Sheikh Mujibur Rahman University (Barishal)
+    { uni: "Bangabandhu Sheikh Mujibur Rahman University (Barishal)", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "Bangabandhu Sheikh Mujibur Rahman University (Barishal)", degree: "MSc/PhD", field: "Engineering", type: "public", division: "barishal", link: "#" },
+    { uni: "Bangabandhu Sheikh Mujibur Rahman University (Barishal)", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "barishal", link: "#" },
+
+    // 6. National University Bangladesh (Barishal Campus)
+    { uni: "National University Bangladesh (Barishal Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "National University Bangladesh (Barishal Campus)", degree: "MSc/PhD", field: "Engineering", type: "public", division: "barishal", link: "#" },
+    { uni: "National University Bangladesh (Barishal Campus)", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "barishal", link: "#" },
+
+    // 7. Bhola University
+    { uni: "Bhola University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "Bhola University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "barishal", link: "#" },
+    { uni: "Bhola University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "barishal", link: "#" },
+
+    // 8. Pirojpur University
+    { uni: "Pirojpur University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "Pirojpur University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "barishal", link: "#" },
+    { uni: "Pirojpur University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "barishal", link: "#" },
+
+    // 9. Jhalokathi University
+    { uni: "Jhalokathi University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "Jhalokathi University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "barishal", link: "#" },
+    { uni: "Jhalokathi University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "barishal", link: "#" },
+
+    // 10. Barguna University
+    { uni: "Barguna University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "Barguna University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "barishal", link: "#" },
+    { uni: "Barguna University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "barishal", link: "#" },
+
+    // 11. Patuakhali University of Science & Technology (PUST)
+    { uni: "Patuakhali University of Science & Technology", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "Patuakhali University of Science & Technology", degree: "MSc/PhD", field: "Engineering", type: "public", division: "barishal", link: "#" },
+
+    // 12. Barishal Engineering University
+    { uni: "Barishal Engineering University", degree: "MSc/MPhil/PhD", field: "Engineering", type: "public", division: "barishal", link: "#" },
+
+
+    // =============================================
+    // ===== PRIVATE UNIVERSITIES =====
+    // =============================================
+
+    // 1. Global University Bangladesh (Barishal Campus)
+    { uni: "Global University Bangladesh (Barishal Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "barishal", link: "#" },
+    { uni: "Global University Bangladesh (Barishal Campus)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "barishal", link: "#" },
+    { uni: "Global University Bangladesh (Barishal Campus)", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "barishal", link: "#" },
+
+    // 2. Barishal International University
+    { uni: "Barishal International University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "barishal", link: "#" },
+    { uni: "Barishal International University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "barishal", link: "#" },
+    { uni: "Barishal International University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "barishal", link: "#" },
+
+    // 3. United City University (Barishal)
+    { uni: "United City University (Barishal)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "barishal", link: "#" },
+    { uni: "United City University (Barishal)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "barishal", link: "#" },
+    { uni: "United City University (Barishal)", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "barishal", link: "#" },
+
+    // 4. Bangladesh University (Barishal Campus)
+    { uni: "Bangladesh University (Barishal Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "barishal", link: "#" },
+    { uni: "Bangladesh University (Barishal Campus)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "barishal", link: "#" },
+    { uni: "Bangladesh University (Barishal Campus)", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "barishal", link: "#" },
+
+    // 5. State University of Bangladesh (Barishal Campus)
+    { uni: "State University of Bangladesh (Barishal Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "barishal", link: "#" },
+    { uni: "State University of Bangladesh (Barishal Campus)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "barishal", link: "#" },
+    { uni: "State University of Bangladesh (Barishal Campus)", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "barishal", link: "#" },
+
+    // 6. Barishal Science & Technology University (Private)
+    { uni: "Barishal Science & Technology University (Private)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "barishal", link: "#" },
+    { uni: "Barishal Science & Technology University (Private)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "barishal", link: "#" },
+    { uni: "Barishal Science & Technology University (Private)", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "barishal", link: "#" },
+
+    // 7. Patuakhali University (Private Campus)
+    { uni: "Patuakhali University (Private Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "barishal", link: "#" },
+    { uni: "Patuakhali University (Private Campus)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "barishal", link: "#" },
+    { uni: "Patuakhali University (Private Campus)", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "barishal", link: "#" },
+
+    // 8. Barishal Central University
+    { uni: "Barishal Central University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "barishal", link: "#" },
+    { uni: "Barishal Central University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "barishal", link: "#" },
+    { uni: "Barishal Central University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "barishal", link: "#" },
+
+    // 9. Barishal University of Science & Technology (Private)
+    { uni: "Barishal University of Science & Technology", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "barishal", link: "#" },
+    { uni: "Barishal University of Science & Technology", degree: "MSc/PhD", field: "Engineering", type: "private", division: "barishal", link: "#" },
+
+    // 10. Patuakhali Science & Technology University (Private)
+    { uni: "Patuakhali Science & Technology University (Private)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "barishal", link: "#" },
+    { uni: "Patuakhali Science & Technology University (Private)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "barishal", link: "#" },
+
+
+    // =============================================
+    // ===== COLLEGES AFFILIATED WITH NATIONAL UNIVERSITY =====
+    // =============================================
+
+    // Government Colleges
+    { uni: "Barishal Government College", degree: "MSc", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "Barishal Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "barishal", link: "#" },
+    { uni: "Barishal Government Women's College", degree: "MSc", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "Barishal Government Women's College", degree: "MSc", field: "Physical Sciences", type: "public", division: "barishal", link: "#" },
+    { uni: "Patuakhali Government College", degree: "MSc", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "Patuakhali Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "barishal", link: "#" },
+    { uni: "Bhola Government College", degree: "MSc", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "Bhola Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "barishal", link: "#" },
+    { uni: "Pirojpur Government College", degree: "MSc", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "Pirojpur Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "barishal", link: "#" },
+    { uni: "Jhalokathi Government College", degree: "MSc", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "Jhalokathi Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "barishal", link: "#" },
+    { uni: "Barguna Government College", degree: "MSc", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "Barguna Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "barishal", link: "#" },
+    { uni: "Government S. A. College, Barishal", degree: "MSc", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "Government S. A. College, Barishal", degree: "MSc", field: "Physical Sciences", type: "public", division: "barishal", link: "#" },
+    { uni: "Government H. S. College, Patuakhali", degree: "MSc", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "Government B. M. College, Barishal", degree: "MSc", field: "Science", type: "public", division: "barishal", link: "#" },
+
+    // Non-Government Colleges (Private)
+    { uni: "Barishal Collegiate School & College", degree: "MSc", field: "Science", type: "private", division: "barishal", link: "#" },
+    { uni: "Barishal Cantonment Public School & College", degree: "MSc", field: "Science", type: "private", division: "barishal", link: "#" },
+    { uni: "Barishal Model School & College", degree: "MSc", field: "Science", type: "private", division: "barishal", link: "#" },
+    { uni: "BIAM Laboratory School & College, Barishal", degree: "MSc", field: "Science", type: "private", division: "barishal", link: "#" },
+    { uni: "Patuakhali Model School & College", degree: "MSc", field: "Science", type: "private", division: "barishal", link: "#" },
+    { uni: "Bhola Model School & College", degree: "MSc", field: "Science", type: "private", division: "barishal", link: "#" },
+    { uni: "Pirojpur Model School & College", degree: "MSc", field: "Science", type: "private", division: "barishal", link: "#" },
+    { uni: "Barishal City College (Private)", degree: "MSc", field: "Science", type: "private", division: "barishal", link: "#" },
+    { uni: "Patuakhali City College", degree: "MSc", field: "Science", type: "private", division: "barishal", link: "#" },
+    { uni: "Bhola City College", degree: "MSc", field: "Science", type: "private", division: "barishal", link: "#" },
+    { uni: "Barishal Women's College", degree: "MSc", field: "Science", type: "private", division: "barishal", link: "#" },
+    { uni: "Patuakhali Women's College", degree: "MSc", field: "Science", type: "private", division: "barishal", link: "#" },
+
+
+    // =============================================
+    // ===== COLLEGES AFFILIATED WITH UNIVERSITY OF BARISHAL =====
+    // =============================================
+
+    { uni: "Barishal Government College (Affiliated with BU)", degree: "MSc", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "Barishal Government Women's College (Affiliated with BU)", degree: "MSc", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "Barishal Collegiate School & College (Affiliated with BU)", degree: "MSc", field: "Science", type: "private", division: "barishal", link: "#" },
+
+
+    // =============================================
+    // ===== RESEARCH INSTITUTES =====
+    // =============================================
+
+    // Bangladesh Council of Scientific and Industrial Research (BCSIR) - Barishal Lab
+    { uni: "BCSIR - Barishal Lab", degree: "MSc/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+    { uni: "BCSIR - Barishal Lab", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "barishal", link: "#" },
+
+    // Bangladesh Agricultural Research Institute (BARI) - Barishal
+    { uni: "BARI - Barishal", degree: "MSc/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+
+    // Bangladesh Rice Research Institute (BRRI) - Barishal
+    { uni: "BRRI - Barishal", degree: "MSc/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+
+    // Bangladesh Fisheries Research Institute (BFRI) - Barishal
+    { uni: "BFRI - Barishal", degree: "MSc/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+
+    // Barishal Medical College Research Wing
+    { uni: "Barishal Medical College (Research)", degree: "MSc/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+
+    // Soil Research Institute - Barishal
+    { uni: "Soil Research Institute - Barishal", degree: "MSc/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+
+    // Marine Fisheries Research Institute - Patuakhali
+    { uni: "Marine Fisheries Research Institute - Patuakhali", degree: "MSc/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+
+    // Bangladesh Jute Research Institute (BJRI) - Barishal
+    { uni: "Bangladesh Jute Research Institute - Barishal", degree: "MSc/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+
+    // Coastal Fisheries Research Institute - Barishal
+    { uni: "Coastal Fisheries Research Institute - Barishal", degree: "MSc/PhD", field: "Science", type: "public", division: "barishal", link: "#" },
+
+
+                // 1. University of Rangpur
+    { uni: "University of Rangpur", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "University of Rangpur", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rangpur", link: "#" },
+    { uni: "University of Rangpur", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+
+    // 2. Begum Rokeya University
+    { uni: "Begum Rokeya University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Begum Rokeya University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rangpur", link: "#" },
+    { uni: "Begum Rokeya University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+
+    // 3. Rangpur Medical University (Science related)
+    { uni: "Rangpur Medical University", degree: "MSc/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+
+    // 4. Rangpur University of Engineering & Technology (RUET)
+    { uni: "Rangpur University of Engineering & Technology", degree: "MSc/MPhil/PhD", field: "Engineering", type: "public", division: "rangpur", link: "#" },
+    { uni: "Rangpur University of Engineering & Technology", degree: "MSc/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Rangpur University of Engineering & Technology", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+    { uni: "Rangpur University of Engineering & Technology", degree: "MPhil/PhD", field: "Architecture", type: "public", division: "rangpur", link: "#" },
+
+    // 5. Rangpur Agricultural University
+    { uni: "Rangpur Agricultural University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Rangpur Agricultural University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rangpur", link: "#" },
+    { uni: "Rangpur Agricultural University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+
+    // 6. National University Bangladesh (Rangpur Campus)
+    { uni: "National University Bangladesh (Rangpur Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "National University Bangladesh (Rangpur Campus)", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rangpur", link: "#" },
+    { uni: "National University Bangladesh (Rangpur Campus)", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+
+    // 7. Bangabandhu Sheikh Mujibur Rahman University (Rangpur)
+    { uni: "Bangabandhu Sheikh Mujibur Rahman University (Rangpur)", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Bangabandhu Sheikh Mujibur Rahman University (Rangpur)", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rangpur", link: "#" },
+    { uni: "Bangabandhu Sheikh Mujibur Rahman University (Rangpur)", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+
+    // 8. Dinajpur University
+    { uni: "Dinajpur University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Dinajpur University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rangpur", link: "#" },
+    { uni: "Dinajpur University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+
+    // 9. Thakurgaon University
+    { uni: "Thakurgaon University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Thakurgaon University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rangpur", link: "#" },
+    { uni: "Thakurgaon University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+
+    // 10. Kurigram University
+    { uni: "Kurigram University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Kurigram University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rangpur", link: "#" },
+    { uni: "Kurigram University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+
+    // 11. Nilphamari University
+    { uni: "Nilphamari University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Nilphamari University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rangpur", link: "#" },
+    { uni: "Nilphamari University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+
+    // 12. Lalmonirhat University
+    { uni: "Lalmonirhat University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Lalmonirhat University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rangpur", link: "#" },
+    { uni: "Lalmonirhat University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+
+    // 13. Panchagarh University
+    { uni: "Panchagarh University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Panchagarh University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rangpur", link: "#" },
+    { uni: "Panchagarh University", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+
+    // 14. Rangpur Science & Technology University (Public)
+    { uni: "Rangpur Science & Technology University (Public)", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Rangpur Science & Technology University (Public)", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rangpur", link: "#" },
+
+    // 15. Gaibandha University
+    { uni: "Gaibandha University", degree: "MSc/MPhil/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Gaibandha University", degree: "MSc/PhD", field: "Engineering", type: "public", division: "rangpur", link: "#" },
+
+    // 16. Rangpur Agricultural University (Research Campus)
+    { uni: "Rangpur Agricultural University (Research Campus)", degree: "MSc/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+
+
+    // =============================================
+    // ===== PRIVATE UNIVERSITIES =====
+    // =============================================
+
+    // 1. Rangpur Science & Technology University (Private)
+    { uni: "Rangpur Science & Technology University (Private)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "rangpur", link: "#" },
+    { uni: "Rangpur Science & Technology University (Private)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "rangpur", link: "#" },
+    { uni: "Rangpur Science & Technology University (Private)", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "rangpur", link: "#" },
+
+    // 2. North Bengal University
+    { uni: "North Bengal University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "rangpur", link: "#" },
+    { uni: "North Bengal University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "rangpur", link: "#" },
+    { uni: "North Bengal University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "rangpur", link: "#" },
+
+    // 3. Rangpur International University
+    { uni: "Rangpur International University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "rangpur", link: "#" },
+    { uni: "Rangpur International University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "rangpur", link: "#" },
+    { uni: "Rangpur International University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "rangpur", link: "#" },
+
+    // 4. Bangladesh University (Rangpur Campus)
+    { uni: "Bangladesh University (Rangpur Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "rangpur", link: "#" },
+    { uni: "Bangladesh University (Rangpur Campus)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "rangpur", link: "#" },
+    { uni: "Bangladesh University (Rangpur Campus)", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "rangpur", link: "#" },
+
+    // 5. State University of Bangladesh (Rangpur Campus)
+    { uni: "State University of Bangladesh (Rangpur Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "rangpur", link: "#" },
+    { uni: "State University of Bangladesh (Rangpur Campus)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "rangpur", link: "#" },
+    { uni: "State University of Bangladesh (Rangpur Campus)", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "rangpur", link: "#" },
+
+    // 6. Global University Bangladesh (Rangpur Campus)
+    { uni: "Global University Bangladesh (Rangpur Campus)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "rangpur", link: "#" },
+    { uni: "Global University Bangladesh (Rangpur Campus)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "rangpur", link: "#" },
+    { uni: "Global University Bangladesh (Rangpur Campus)", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "rangpur", link: "#" },
+
+    // 7. United City University (Rangpur)
+    { uni: "United City University (Rangpur)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "rangpur", link: "#" },
+    { uni: "United City University (Rangpur)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "rangpur", link: "#" },
+    { uni: "United City University (Rangpur)", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "rangpur", link: "#" },
+
+    // 8. Dinajpur Science & Technology University (Private)
+    { uni: "Dinajpur Science & Technology University (Private)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "rangpur", link: "#" },
+    { uni: "Dinajpur Science & Technology University (Private)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "rangpur", link: "#" },
+    { uni: "Dinajpur Science & Technology University (Private)", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "rangpur", link: "#" },
+
+    // 9. Rangpur City University
+    { uni: "Rangpur City University", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "rangpur", link: "#" },
+    { uni: "Rangpur City University", degree: "MSc/PhD", field: "Engineering", type: "private", division: "rangpur", link: "#" },
+    { uni: "Rangpur City University", degree: "MSc/PhD", field: "Physical Sciences", type: "private", division: "rangpur", link: "#" },
+
+    // 10. University of North Bengal (Private)
+    { uni: "University of North Bengal (Private)", degree: "MSc/MPhil/PhD", field: "Science", type: "private", division: "rangpur", link: "#" },
+    { uni: "University of North Bengal (Private)", degree: "MSc/PhD", field: "Engineering", type: "private", division: "rangpur", link: "#" },
+
+
+    // =============================================
+    // ===== COLLEGES AFFILIATED WITH NATIONAL UNIVERSITY =====
+    // =============================================
+
+    // Government Colleges
+    { uni: "Rangpur Government College", degree: "MSc", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Rangpur Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+    { uni: "Rangpur Government Women's College", degree: "MSc", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Rangpur Government Women's College", degree: "MSc", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+    { uni: "Dinajpur Government College", degree: "MSc", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Dinajpur Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+    { uni: "Thakurgaon Government College", degree: "MSc", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Thakurgaon Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+    { uni: "Kurigram Government College", degree: "MSc", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Kurigram Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+    { uni: "Nilphamari Government College", degree: "MSc", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Nilphamari Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+    { uni: "Lalmonirhat Government College", degree: "MSc", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Lalmonirhat Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+    { uni: "Panchagarh Government College", degree: "MSc", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Panchagarh Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+    { uni: "Gaibandha Government College", degree: "MSc", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Gaibandha Government College", degree: "MSc", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+    { uni: "Government A. M. College, Rangpur", degree: "MSc", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Government A. M. College, Rangpur", degree: "MSc", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+    { uni: "Government M. M. College, Dinajpur", degree: "MSc", field: "Science", type: "public", division: "rangpur", link: "#" },
+
+    // Non-Government Colleges (Private)
+    { uni: "Rangpur Collegiate School & College", degree: "MSc", field: "Science", type: "private", division: "rangpur", link: "#" },
+    { uni: "Rangpur Cantonment Public School & College", degree: "MSc", field: "Science", type: "private", division: "rangpur", link: "#" },
+    { uni: "Rangpur Model School & College", degree: "MSc", field: "Science", type: "private", division: "rangpur", link: "#" },
+    { uni: "BIAM Laboratory School & College, Rangpur", degree: "MSc", field: "Science", type: "private", division: "rangpur", link: "#" },
+    { uni: "Dinajpur Model School & College", degree: "MSc", field: "Science", type: "private", division: "rangpur", link: "#" },
+    { uni: "Thakurgaon Model School & College", degree: "MSc", field: "Science", type: "private", division: "rangpur", link: "#" },
+    { uni: "Kurigram Model School & College", degree: "MSc", field: "Science", type: "private", division: "rangpur", link: "#" },
+    { uni: "Rangpur City College (Private)", degree: "MSc", field: "Science", type: "private", division: "rangpur", link: "#" },
+    { uni: "Dinajpur City College", degree: "MSc", field: "Science", type: "private", division: "rangpur", link: "#" },
+    { uni: "Rangpur Women's College", degree: "MSc", field: "Science", type: "private", division: "rangpur", link: "#" },
+    { uni: "Dinajpur Women's College", degree: "MSc", field: "Science", type: "private", division: "rangpur", link: "#" },
+    { uni: "Thakurgaon City College", degree: "MSc", field: "Science", type: "private", division: "rangpur", link: "#" },
+
+
+    // =============================================
+    // ===== COLLEGES AFFILIATED WITH UNIVERSITY OF RANGPUR =====
+    // =============================================
+
+    { uni: "Rangpur Government College (Affiliated with RU)", degree: "MSc", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Rangpur Government Women's College (Affiliated with RU)", degree: "MSc", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "Rangpur Collegiate School & College (Affiliated with RU)", degree: "MSc", field: "Science", type: "private", division: "rangpur", link: "#" },
+
+
+    // =============================================
+    // ===== RESEARCH INSTITUTES =====
+    // =============================================
+
+    // Bangladesh Council of Scientific and Industrial Research (BCSIR) - Rangpur Lab
+    { uni: "BCSIR - Rangpur Lab", degree: "MSc/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+    { uni: "BCSIR - Rangpur Lab", degree: "MSc/PhD", field: "Physical Sciences", type: "public", division: "rangpur", link: "#" },
+
+    // Bangladesh Agricultural Research Institute (BARI) - Rangpur
+    { uni: "BARI - Rangpur", degree: "MSc/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+
+    // Bangladesh Rice Research Institute (BRRI) - Rangpur
+    { uni: "BRRI - Rangpur", degree: "MSc/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+
+    // Bangladesh Fisheries Research Institute (BFRI) - Rangpur
+    { uni: "BFRI - Rangpur", degree: "MSc/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+
+    // Rangpur Medical College Research Wing
+    { uni: "Rangpur Medical College (Research)", degree: "MSc/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+
+    // Soil Research Institute - Rangpur
+    { uni: "Soil Research Institute - Rangpur", degree: "MSc/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+
+    // Bangladesh Jute Research Institute (BJRI) - Rangpur
+    { uni: "Bangladesh Jute Research Institute - Rangpur", degree: "MSc/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+
+    // Sugarcane Research Institute - Rangpur
+    { uni: "Sugarcane Research Institute - Rangpur", degree: "MSc/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+
+    // Tea Research Institute - Rangpur
+    { uni: "Tea Research Institute - Rangpur", degree: "MSc/PhD", field: "Science", type: "public", division: "rangpur", link: "#" },
+
+    // Livestock Research Institute - Rangpur
+    { uni: "Livestock Research Institute - Rangpur", degree: "MSc/PhD", field: "Science", type: "public", division: "rangpur", link: "#" }
         ];
 
         // DOM
