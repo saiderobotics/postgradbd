@@ -229,6 +229,35 @@
       color: white;
     }
 
+    .admission-date {
+      margin-top: 7px;
+      font-size: 0.75rem;
+      color: #315a78;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .admission-date i {
+      color: #1d6f9c;
+    }
+
+    .date-value {
+      background: #f1f6fb;
+      border: 1px solid #d7e4f1;
+      padding: 2px 10px;
+      border-radius: 30px;
+      font-weight: 600;
+      color: #0a2a4a;
+    }
+
+    .date-unavailable {
+      color: #7a5a2a;
+      background: #fff7e6;
+      border-color: #f0dfb6;
+    }
+
     .footer {
       margin-top: 40px;
       border-top: 1px solid #dce5f0;
@@ -314,22 +343,117 @@
 
 <script>
   (function() {
-    // ---------- FULL DATA : all 13 entries (all Dhaka) ----------
+    // ---------- FULL DATA : 12 entries (all Dhaka) ----------
 const programmes = [
-  { uni: "University of Dhaka", degree: "MSc/MPhil/PhD", field: "Physics", type: "public", division: "dhaka", link: "https://www.du.ac.bd/body/PHY" },
-  { uni: "BUET", degree: "MSc/MPhil/PhD", field: "Physics", type: "public", division: "dhaka", link: "https://phy.buet.ac.bd/notices" },
-  { uni: "Jahangirnagar University", degree: "MSc/MPhil/PhD", field: "Physics", type: "public", division: "dhaka", link: "https://msapewp.physicsju.edu.bd/public/" },
-  { uni: "Jagannath University", degree: "MSc/MPhil/PhD", field: "Physics", type: "public", division: "dhaka", link: "https://jnu.ac.bd/department/portal/physics" },
-  { uni: "Dhaka Central University", degree: "MSc", field: "Physics", type: "public", division: "dhaka", link: "https://dcu.ac.bd/" },
-  { uni: "Dhaka College", degree: "Masters", field: "Physics", type: "public", division: "dhaka", link: "https://www.dhakacollege.edu.bd/en/department/physics" },
-  { uni: "Government Titumir College", degree: "Masters", field: "Physics", type: "public", division: "dhaka", link: "https://titumircollege.gov.bd/department/faculty-of-science/physics/" },
-  { uni: "Government Bangla College", degree: "Masters", field: "Physics", type: "public", division: "dhaka", link: "https://gbc.gov.bd/" },
-  { uni: "Tejgaon College", degree: "Masters", field: "Physics", type: "private", division: "dhaka", link: "https://www.tejgaoncollege.edu.bd/" },
-  { uni: "Lalmatia Government Mohila College", degree: "Masters", field: "Physics", type: "public", division: "dhaka", link: "https://lalmatiamohilacollege.edu.bd/Home/ViewPage?tag=admission" },
-  { uni: "Kabi Nazrul Government College", degree: "Masters", field: "Physics", type: "public", division: "dhaka", link: "https://kabinazrulcollege.gov.bd/academic/department/faculty-of-science/" },
-  { uni: "Government Shaheed Suhrawardy College", degree: "Masters", field: "Physics", type: "public", division: "dhaka", link: "https://gssc.college.gov.bd/"}
+  {
+    uni: "University of Dhaka",
+    degree: "MSc/MPhil/PhD",
+    field: "Physics",
+    type: "public",
+    division: "dhaka",
+    lastAdmissionNotice: "2026-01-19",
+    link: "https://www.du.ac.bd/body/PHY"
+  },
+  {
+    uni: "BUET",
+    degree: "MSc/MPhil/PhD",
+    field: "Physics",
+    type: "public",
+    division: "dhaka",
+    lastAdmissionNotice: "2026-05-09",
+    link: "https://phy.buet.ac.bd/notices"
+  },
+  {
+    uni: "Jahangirnagar University",
+    degree: "MSc/MPhil/PhD",
+    field: "Physics",
+    type: "public",
+    division: "dhaka",
+    lastAdmissionNotice: "2026-03-15",
+    link: "https://msapewp.physicsju.edu.bd/public/"
+  },
+  {
+    uni: "Jagannath University",
+    degree: "MSc/MPhil/PhD",
+    field: "Physics",
+    type: "public",
+    division: "dhaka",
+    lastAdmissionNotice: "2026-06-24",
+    link: "https://jnu.ac.bd/department/portal/physics"
+  },
+  {
+    uni: "Dhaka Central University",
+    degree: "MSc",
+    field: "Physics",
+    type: "public",
+    division: "dhaka",
+    lastAdmissionNotice: "2026-05-25",
+    link: "https://dcu.ac.bd/"
+  },
+  {
+    uni: "Dhaka College",
+    degree: "Masters",
+    field: "Physics",
+    type: "public",
+    division: "dhaka",
+    lastAdmissionNotice: "Not found",
+    link: "https://www.dhakacollege.edu.bd/en/department/physics"
+  },
+  {
+    uni: "Government Titumir College",
+    degree: "Masters",
+    field: "Physics",
+    type: "public",
+    division: "dhaka",
+    lastAdmissionNotice: "2026-05-07",
+    link: "https://titumircollege.gov.bd/department/faculty-of-science/physics/"
+  },
+  {
+    uni: "Government Bangla College",
+    degree: "Masters",
+    field: "Physics",
+    type: "public",
+    division: "dhaka",
+    lastAdmissionNotice: "Not found",
+    link: "https://gbc.gov.bd/"
+  },
+  {
+    uni: "Tejgaon College",
+    degree: "Masters",
+    field: "Physics",
+    type: "private",
+    division: "dhaka",
+    lastAdmissionNotice: "2026-01-23",
+    link: "https://www.tejgaoncollege.edu.bd/"
+  },
+  {
+    uni: "Lalmatia Government Mohila College",
+    degree: "Masters",
+    field: "Physics",
+    type: "public",
+    division: "dhaka",
+    lastAdmissionNotice: "Not found",
+    link: "https://lalmatiamohilacollege.edu.bd/Home/ViewPage?tag=admission"
+  },
+  {
+    uni: "Kabi Nazrul Government College",
+    degree: "Masters",
+    field: "Physics",
+    type: "public",
+    division: "dhaka",
+    lastAdmissionNotice: "Not found",
+    link: "https://kabinazrulcollege.gov.bd/academic/department/faculty-of-science/"
+  },
+  {
+    uni: "Government Shaheed Suhrawardy College",
+    degree: "Masters",
+    field: "Physics",
+    type: "public",
+    division: "dhaka",
+    lastAdmissionNotice: "Not found",
+    link: "https://gssc.college.gov.bd/"
+  }
 ];
-
     // DOM refs
     const resultsContainer = document.getElementById('resultsContainer');
     const resultCount = document.getElementById('resultCount');
@@ -373,6 +497,17 @@ const programmes = [
                   <i class="fas fa-map-pin"></i> Dhaka
                 </span>
               </div>
+              <div class="admission-date">
+                <i class="far fa-calendar-alt"></i>
+                Last admission notice:
+                <span class="date-value ${item.lastAdmissionNotice === 'Not found' ? 'date-unavailable' : ''}">
+                  ${item.lastAdmissionNotice === 'Not found'
+                    ? 'Not found on official site'
+                    : new Date(item.lastAdmissionNotice + 'T00:00:00').toLocaleDateString('en-GB', {
+                        day: '2-digit', month: 'short', year: 'numeric'
+                      })}
+                </span>
+              </div>
             </div>
             <a href="${item.link}" class="link-btn" target="_blank">
               <i class="fas fa-external-link-alt"></i> Details
@@ -397,7 +532,7 @@ const programmes = [
     }
 
     console.log("📚 PostGraduationBangladesh · MSc · MPhil · PhD (Dhaka region)");
-    console.log(`📌 ${programmes.length} programmes loaded, all in Dhaka division.`);
+    console.log(`📌 ${programmes.length} programmes loaded, all in Dhaka division. Admission-notice dates are shown where verified.`);
   })();
 </script>
 </body>
