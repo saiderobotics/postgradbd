@@ -10,4 +10,3 @@
 10. Lalmatia Government Mohila College
 11. Kabi Nazrul Government College
 12. Government Shaheed Suhrawardy College
-13. Begum Badrunnessa Government Girls' College
