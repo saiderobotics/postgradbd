@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Post Graduation Bangladesh · MSc · MPhil · PhD</title>
-  <!-- Font Awesome 6 (free) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <title>Post Graduation Dhaka · MSc Physics</title>
+
+  <!-- Font Awesome 6 -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -26,514 +34,1256 @@
       margin: 0 auto;
     }
 
-    /* header */
+
+    /* =========================
+       HEADER
+    ========================= */
+
     .header {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
+
       background: white;
+
       padding: 12px 24px;
+
       border-radius: 60px;
+
       box-shadow: 0 4px 14px rgba(0, 20, 40, 0.04);
+
       margin-bottom: 24px;
+
       border: 1px solid #dce6f2;
     }
+
 
     .logo {
       font-size: 1.5rem;
       font-weight: 700;
       color: #0a2a4a;
     }
+
+
     .logo i {
       color: #1d6f9c;
       margin-right: 8px;
     }
+
+
     .logo span {
       font-weight: 300;
       color: #2f5577;
     }
 
+
     .badge-bd {
       background: #0a5c3a;
       color: white;
+
       padding: 4px 18px;
+
       border-radius: 40px;
+
       font-size: 0.7rem;
+
       font-weight: 600;
+
       letter-spacing: 0.3px;
+
       display: inline-flex;
+
       align-items: center;
+
       gap: 6px;
     }
+
+
     .badge-bd i {
       color: #ffd966;
     }
 
-    /* hero */
+
+
+    /* =========================
+       HERO
+    ========================= */
+
     .hero {
       background: linear-gradient(145deg, #e3edf9, #d2e1f2);
+
       border-radius: 36px;
+
       padding: 20px 28px;
+
       margin-bottom: 26px;
+
       border: 1px solid #c5d6ed;
     }
+
+
     .hero h1 {
       font-size: 1.8rem;
+
       font-weight: 700;
+
       color: #0a2a4a;
     }
+
+
     .hero h1 i {
       color: #1d6f9c;
+
       margin-right: 10px;
     }
+
+
     .hero p {
       font-size: 1rem;
+
       color: #1a3d5c;
+
       margin-top: 2px;
     }
+
+
     .hero p i {
       color: #1d6f9c;
+
       margin-right: 6px;
     }
+
+
     .hero .stats {
       display: flex;
+
       flex-wrap: wrap;
+
       gap: 14px;
+
       margin-top: 10px;
     }
+
+
     .hero .stats span {
       background: white;
+
       padding: 4px 18px;
+
       border-radius: 40px;
+
       font-size: 0.8rem;
+
       font-weight: 600;
+
       color: #0a2a4a;
+
       border: 1px solid #bed2eb;
     }
+
+
     .hero .stats span i {
       margin-right: 6px;
+
       color: #1d6f9c;
     }
 
-    /* results */
+
+
+    /* =========================
+       RESULTS
+    ========================= */
+
     .results-area {
       margin-top: 6px;
     }
 
+
     .results-header {
       display: flex;
+
       align-items: center;
+
       justify-content: space-between;
+
       margin-bottom: 12px;
+
       flex-wrap: wrap;
+
       gap: 6px;
     }
+
+
     .results-header h2 {
       font-size: 1.2rem;
+
       font-weight: 700;
+
       color: #0a2a4a;
     }
+
+
     .results-header h2 i {
       color: #1d6f9c;
+
       margin-right: 8px;
     }
+
+
     .results-header .count {
       font-size: 0.8rem;
+
       font-weight: 400;
+
       color: #2f5577;
+
       background: #eaf1fb;
+
       padding: 2px 16px;
+
       border-radius: 40px;
     }
+
+
+
+    /* =========================
+       RESULT CARD
+    ========================= */
 
     .result-card {
       background: white;
+
       border-radius: 20px;
+
       padding: 16px 20px;
+
       border: 1px solid #e8f0fa;
+
       margin-bottom: 10px;
+
       display: flex;
+
       flex-wrap: wrap;
+
       align-items: center;
+
       justify-content: space-between;
+
       transition: 0.15s;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.01);
+
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.01);
     }
+
+
     .result-card:hover {
       border-color: #b8cfe8;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
     }
+
+
     .result-card .info {
       flex: 1;
+
       min-width: 200px;
     }
+
+
     .result-card .info h3 {
       font-size: 1rem;
+
       font-weight: 600;
+
       color: #0a2a4a;
     }
+
+
     .result-card .info .meta {
       font-size: 0.8rem;
+
       color: #2f5577;
+
       margin-top: 2px;
+
       display: flex;
+
       flex-wrap: wrap;
+
       gap: 4px 12px;
+
       align-items: center;
     }
+
+
     .result-card .info .meta i {
       margin-right: 4px;
+
       color: #1d6f9c;
     }
+
+
+
+    /* =========================
+       TAGS
+    ========================= */
 
     .tag {
       display: inline-block;
+
       padding: 2px 12px;
+
       border-radius: 30px;
+
       font-size: 0.65rem;
+
       font-weight: 600;
+
       white-space: nowrap;
     }
-    .tag-msc { background: #d4e2f5; color: #0a2a4a; }
-    .tag-mphil { background: #d4f0e6; color: #145a3e; }
-    .tag-phd { background: #f0dce8; color: #6a2a4a; }
-    .tag-public { background: #0a2a4a; color: white; }
-    .tag-private { background: #6b4a7a; color: white; }
+
+
+    /* MSc ONLY */
+
+    .tag-msc {
+      background: #d4e2f5;
+
+      color: #0a2a4a;
+    }
+
+
+    .tag-public {
+      background: #0a2a4a;
+
+      color: white;
+    }
+
+
+    .tag-private {
+      background: #6b4a7a;
+
+      color: white;
+    }
+
+
+
+    /* =========================
+       LOCATION
+    ========================= */
+
+    .location-tag {
+      background: #e0eaf5;
+
+      padding: 0 12px;
+
+      border-radius: 40px;
+
+      font-size: 0.7rem;
+
+      font-weight: 500;
+
+      color: #0a2a4a;
+
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 4px;
+    }
+
+
+
+    /* =========================
+       LINK BUTTON
+    ========================= */
 
     .link-btn {
       background: #eaf1fb;
+
       padding: 6px 18px;
+
       border-radius: 40px;
+
       font-size: 0.75rem;
+
       font-weight: 600;
+
       text-decoration: none;
+
       color: #0a2a4a;
+
       border: 1px solid #c5d9f0;
+
       transition: 0.2s;
+
       display: inline-flex;
+
       align-items: center;
+
       gap: 6px;
+
       white-space: nowrap;
     }
+
+
     .link-btn i {
       font-size: 0.6rem;
+
       color: #1d6f9c;
     }
+
+
     .link-btn:hover {
       background: #0a2a4a;
+
       color: white;
+
       border-color: #0a2a4a;
     }
+
+
     .link-btn:hover i {
       color: white;
     }
 
+
+
+    /* =========================
+       ADMISSION DATE
+    ========================= */
+
     .admission-date {
       margin-top: 7px;
+
       font-size: 0.75rem;
+
       color: #315a78;
+
       display: inline-flex;
+
       align-items: center;
+
       gap: 6px;
+
       flex-wrap: wrap;
     }
+
 
     .admission-date i {
       color: #1d6f9c;
     }
 
+
     .date-value {
       background: #f1f6fb;
+
       border: 1px solid #d7e4f1;
+
       padding: 2px 10px;
+
       border-radius: 30px;
+
       font-weight: 600;
+
       color: #0a2a4a;
     }
 
+
     .date-unavailable {
       color: #7a5a2a;
+
       background: #fff7e6;
+
       border-color: #f0dfb6;
     }
 
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
     .footer {
       margin-top: 40px;
+
       border-top: 1px solid #dce5f0;
+
       padding: 20px 0 6px;
+
       display: flex;
+
       flex-wrap: wrap;
+
       justify-content: space-between;
+
       color: #2f5577;
+
       font-size: 0.8rem;
     }
+
+
     .footer i {
       margin-right: 6px;
+
       color: #1a4a7a;
     }
 
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
     @media (max-width: 700px) {
+
       .header {
         flex-direction: column;
+
         align-items: stretch;
+
         gap: 8px;
+
         padding: 14px 18px;
+
         border-radius: 32px;
       }
-      .hero h1 { font-size: 1.4rem; }
-      .result-card { flex-direction: column; align-items: flex-start; gap: 8px; }
-      .result-card .link-btn { align-self: flex-start; }
+
+
+      .hero h1 {
+        font-size: 1.4rem;
+      }
+
+
+      .result-card {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+      }
+
+
+      .result-card .link-btn {
+        align-self: flex-start;
+      }
+
     }
+
+
     @media (max-width: 480px) {
-      .hero h1 { font-size: 1.2rem; }
-      .hero .stats span { font-size: 0.65rem; padding: 2px 12px; }
+
+      .hero h1 {
+        font-size: 1.2rem;
+      }
+
+
+      .hero .stats span {
+        font-size: 0.65rem;
+
+        padding: 2px 12px;
+      }
+
     }
+
   </style>
+
 </head>
+
+
 <body>
+
+
 <div class="container">
 
-  <!-- header -->
+
+  <!-- =========================
+       HEADER
+  ========================= -->
+
   <div class="header">
+
     <div class="logo">
-      <i class="fas fa-graduation-cap"></i> PostGraduation<span>Bangladesh</span>
+
+      <i class="fas fa-graduation-cap"></i>
+
+      PostGraduation<span>Bangladesh</span>
+
     </div>
-    <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
-      <span class="badge-bd"><i class="fas fa-circle"></i> Bangladesh</span>
-      <span style="font-size:0.8rem; color:#2f5577;"><i class="fas fa-arrow-right"></i> MSc · MPhil · PhD</span>
+
+
+    <div
+      style="
+        display:flex;
+        align-items:center;
+        gap:12px;
+        flex-wrap:wrap;
+      "
+    >
+
+      <span class="badge-bd">
+
+        <i class="fas fa-circle"></i>
+
+        Bangladesh
+
+      </span>
+
+
+      <span
+        style="
+          font-size:0.8rem;
+          color:#2f5577;
+        "
+      >
+
+        <i class="fas fa-arrow-right"></i>
+
+        MSc · Physics
+
+      </span>
+
     </div>
+
   </div>
 
-  <!-- hero -->
+
+
+  <!-- =========================
+       HERO
+  ========================= -->
+
   <div class="hero">
-    <h1><i class="fas fa-graduation-cap"></i> Postgraduate programmes in Bangladesh</h1>
-    <p><i class="fas fa-arrow-right"></i> All public & private universities offering MSc, MPhil & PhD – Dhaka region</p>
-    <div class="stats" id="heroStats">
-      <span><i class="fas fa-university"></i> <span id="totalCount">0</span> programmes</span>
-      <span><i class="fas fa-building-columns"></i> <span id="uniCount">0</span> universities</span>
-      <span><i class="fas fa-rotate"></i> updated daily</span>
+
+    <h1>
+
+      <i class="fas fa-graduation-cap"></i>
+
+      MSc Physics programmes in Bangladesh
+
+    </h1>
+
+
+    <p>
+
+      <i class="fas fa-arrow-right"></i>
+
+      Universities and colleges offering MSc programmes in Physics
+
+    </p>
+
+
+    <div
+      class="stats"
+      id="heroStats"
+    >
+
+      <span>
+
+        <i class="fas fa-university"></i>
+
+        <span id="totalCount">0</span>
+
+        programmes
+
+      </span>
+
+
+      <span>
+
+        <i class="fas fa-building-columns"></i>
+
+        <span id="uniCount">0</span>
+
+        institutions
+
+      </span>
+
+
+      <span>
+
+        <i class="fas fa-rotate"></i>
+
+        updated daily
+
+      </span>
+
     </div>
+
   </div>
 
-  <!-- results -->
+
+
+  <!-- =========================
+       RESULTS
+  ========================= -->
+
   <div class="results-area">
+
+
     <div class="results-header">
-      <h2><i class="fas fa-list-ul"></i> Postgraduate programmes</h2>
-      <span class="count" id="resultCount">Showing 0</span>
+
+      <h2>
+
+        <i class="fas fa-list-ul"></i>
+
+        MSc Physics programmes
+
+      </h2>
+
+
+      <span
+        class="count"
+        id="resultCount"
+      >
+
+        Showing 0
+
+      </span>
+
     </div>
+
+
     <div id="resultsContainer">
-      <!-- rendered by JS -->
+
+      <!-- Rendered by JavaScript -->
+
     </div>
+
   </div>
 
-  <!-- footer -->
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
   <div class="footer">
+
+
     <div>
-      <i class="fas fa-graduation-cap"></i> PostGraduationBangladesh &nbsp;|&nbsp; MSc · MPhil · PhD
+
+      <i class="fas fa-graduation-cap"></i>
+
+      PostGraduationBangladesh
+
+      &nbsp;|&nbsp;
+
+      MSc · Physics
+
     </div>
+
+
     <div>
+
       <i class="fab fa-facebook"></i>
-      <i class="fab fa-youtube" style="margin-left:12px;"></i>
-      <i class="fab fa-twitter" style="margin-left:12px;"></i>
-      <span style="margin-left:20px;">⚡ 2026</span>
+
+
+      <i
+        class="fab fa-youtube"
+        style="margin-left:12px;"
+      ></i>
+
+
+      <i
+        class="fab fa-twitter"
+        style="margin-left:12px;"
+      ></i>
+
+
+      <span
+        style="margin-left:20px;"
+      >
+
+        ⚡ 2026
+
+      </span>
+
     </div>
+
   </div>
+
+
 </div>
 
+
+
 <script>
-  (function() {
-    // ---------- FULL DATA : 12 entries (all Dhaka) ----------
-const programmes = [
-  {
-    uni: "University of Dhaka",
-    degree: "MSc/MPhil/PhD",
-    field: "Physics",
-    type: "public",
-    division: "dhaka",
-    lastAdmissionNotice: "2026-01-19",
-    link: "https://www.du.ac.bd/body/PHY"
-  },
-  {
-    uni: "BUET",
-    degree: "MSc/MPhil/PhD",
-    field: "Physics",
-    type: "public",
-    division: "dhaka",
-    lastAdmissionNotice: "2026-05-09",
-    link: "https://phy.buet.ac.bd/notices"
-  },
-  {
-    uni: "Jahangirnagar University",
-    degree: "MSc/MPhil/PhD",
-    field: "Physics",
-    type: "public",
-    division: "dhaka",
-    lastAdmissionNotice: "2026-03-15",
-    link: "https://msapewp.physicsju.edu.bd/public/"
-  },
-  {
-    uni: "Jagannath University",
-    degree: "MSc/MPhil/PhD",
-    field: "Physics",
-    type: "public",
-    division: "dhaka",
-    lastAdmissionNotice: "2026-06-24",
-    link: "https://jnu.ac.bd/department/portal/physics"
-  },
-  {
-    uni: "Dhaka Central University",
-    degree: "MSc",
-    field: "Physics",
-    type: "public",
-    division: "dhaka",
-    lastAdmissionNotice: "2026-05-25",
-    link: "https://dcu.ac.bd/"
-  },
-  {
-    uni: "Dhaka College",
-    degree: "Masters",
-    field: "Physics",
-    type: "public",
-    division: "dhaka",
-    lastAdmissionNotice: "Not found",
-    link: "https://www.dhakacollege.edu.bd/en/department/physics"
-  },
-  {
-    uni: "Government Titumir College",
-    degree: "Masters",
-    field: "Physics",
-    type: "public",
-    division: "dhaka",
-    lastAdmissionNotice: "2026-05-07",
-    link: "https://titumircollege.gov.bd/department/faculty-of-science/physics/"
-  },
-  {
-    uni: "Government Bangla College",
-    degree: "Masters",
-    field: "Physics",
-    type: "public",
-    division: "dhaka",
-    lastAdmissionNotice: "Not found",
-    link: "https://gbc.gov.bd/"
-  },
-  {
-    uni: "Tejgaon College",
-    degree: "Masters",
-    field: "Physics",
-    type: "private",
-    division: "dhaka",
-    lastAdmissionNotice: "2026-01-23",
-    link: "https://www.tejgaoncollege.edu.bd/"
-  },
-  {
-    uni: "Lalmatia Government Mohila College",
-    degree: "Masters",
-    field: "Physics",
-    type: "public",
-    division: "dhaka",
-    lastAdmissionNotice: "Not found",
-    link: "https://lalmatiamohilacollege.edu.bd/Home/ViewPage?tag=admission"
-  },
-  {
-    uni: "Kabi Nazrul Government College",
-    degree: "Masters",
-    field: "Physics",
-    type: "public",
-    division: "dhaka",
-    lastAdmissionNotice: "Not found",
-    link: "https://kabinazrulcollege.gov.bd/academic/department/faculty-of-science/"
-  },
-  {
-    uni: "Government Shaheed Suhrawardy College",
-    degree: "Masters",
-    field: "Physics",
-    type: "public",
-    division: "dhaka",
-    lastAdmissionNotice: "Not found",
-    link: "https://gssc.college.gov.bd/"
+
+
+(function () {
+
+
+  /* =========================================================
+     PROGRAMME DATA
+     MSc PHYSICS ONLY
+     ========================================================= */
+
+  const programmes = [
+
+
+    {
+      uni: "University of Dhaka",
+      degree: "MSc",
+      field: "Physics",
+      type: "public",
+      division: "dhaka",
+      lastAdmissionNotice: "2026-03-11",
+      link: "https://www.du.ac.bd/webPost/170/23133"
+    },
+
+
+    {
+      uni: "BUET",
+      degree: "MSc",
+      field: "Physics",
+      type: "public",
+      division: "dhaka",
+      lastAdmissionNotice: "2026-05-13",
+      link: "https://phy.buet.ac.bd/notices"
+    },
+
+
+    {
+      uni: "Jahangirnagar University",
+      degree: "MSc",
+      field: "Applied Physics & Electronics",
+      type: "public",
+      division: "dhaka",
+      lastAdmissionNotice: "2026-08-22",
+      link: "https://msapewp.physicsju.edu.bd/"
+    },
+
+
+    {
+      uni: "Jagannath University",
+      degree: "MSc",
+      field: "Physics",
+      type: "public",
+      division: "dhaka",
+      lastAdmissionNotice: "2026-06-24",
+      link: "https://jnu.ac.bd/department/portal/physics"
+    },
+
+
+    {
+      uni: "Tejgaon College",
+      degree: "MSc",
+      field: "Physics",
+      type: "private",
+      division: "dhaka",
+      lastAdmissionNotice: "2026-01-23",
+      link: "https://tejgaoncollege.edu.bd/pages"
+    },
+
+
+    {
+      uni: "DUET",
+      degree: "MSc",
+      field: "Physics",
+      type: "public",
+      division: "dhaka",
+      lastAdmissionNotice: "Not found",
+      link: "https://www.duet.ac.bd/department/phy"
+    },
+
+
+    {
+      uni: "National University (NU)",
+      degree: "MSc",
+      field: "Physics",
+      type: "public",
+      division: "gazipur",
+      lastAdmissionNotice: "2026-02-27",
+      link: "https://www.nu.ac.bd/admission-notice.php"
+    }
+
+
+  ];
+
+
+
+  /* =========================================================
+     DOM REFERENCES
+     ========================================================= */
+
+  const resultsContainer =
+    document.getElementById("resultsContainer");
+
+
+  const resultCount =
+    document.getElementById("resultCount");
+
+
+  const totalCount =
+    document.getElementById("totalCount");
+
+
+  const uniCount =
+    document.getElementById("uniCount");
+
+
+
+  /* =========================================================
+     LOCATION
+     ========================================================= */
+
+  function getLocationName(division) {
+
+
+    const locations = {
+
+      dhaka: "Dhaka",
+
+      rajshahi: "Rajshahi",
+
+      gazipur: "Gazipur",
+
+      chattogram: "Chattogram",
+
+      khulna: "Khulna",
+
+      barishal: "Barishal",
+
+      sylhet: "Sylhet",
+
+      rangpur: "Rangpur",
+
+      mymensingh: "Mymensingh"
+
+    };
+
+
+    return locations[division] || division;
+
   }
-];
-    // DOM refs
-    const resultsContainer = document.getElementById('resultsContainer');
-    const resultCount = document.getElementById('resultCount');
-    const totalCount = document.getElementById('totalCount');
-    const uniCount = document.getElementById('uniCount');
 
-    // render all (no filters)
-    function renderAll() {
-      const filtered = programmes; // all entries
 
-      const uniqueUnis = new Set(filtered.map(p => p.uni));
-      totalCount.textContent = filtered.length;
-      uniCount.textContent = uniqueUnis.size;
-      resultCount.textContent = `Showing ${filtered.length}`;
 
-      let html = '';
-      filtered.forEach(item => {
-        // degree badges
-        let degBadges = '';
-        if (item.degree.includes('MSc')) degBadges += `<span class="tag tag-msc">MSc</span> `;
-        if (item.degree.includes('MPhil')) degBadges += `<span class="tag tag-mphil">MPhil</span> `;
-        if (item.degree.includes('PhD')) degBadges += `<span class="tag tag-phd">PhD</span> `;
-        if (degBadges === '') degBadges = `<span class="tag tag-msc">${item.degree}</span>`;
+  /* =========================================================
+     DATE FORMAT
+     ========================================================= */
 
-        const typeBadge = item.type === 'public' 
-          ? `<span class="tag tag-public"><i class="fas fa-university"></i> Public</span>`
-          : `<span class="tag tag-private"><i class="fas fa-building"></i> Private</span>`;
+  function formatDate(dateString) {
 
-        html += `
-          <div class="result-card">
-            <div class="info">
-              <h3><i class="fas fa-school" style="color:#1d6f9c; margin-right:6px;"></i>${item.uni}</h3>
-              <div class="meta">
-                <span><i class="fas fa-flask"></i> ${item.field}</span>
-                <span>|</span>
-                ${typeBadge}
-                <span>|</span>
-                ${degBadges}
-                <span>|</span>
-                <span style="background:#e0eaf5; padding:0 12px; border-radius:40px; font-size:0.7rem; font-weight:500; color:#0a2a4a; display:inline-flex; align-items:center; gap:4px;">
-                  <i class="fas fa-map-pin"></i> Dhaka
-                </span>
-              </div>
-              <div class="admission-date">
-                <i class="far fa-calendar-alt"></i>
-                Last admission notice:
-                <span class="date-value ${item.lastAdmissionNotice === 'Not found' ? 'date-unavailable' : ''}">
-                  ${item.lastAdmissionNotice === 'Not found'
-                    ? 'Not found on official site'
-                    : new Date(item.lastAdmissionNotice + 'T00:00:00').toLocaleDateString('en-GB', {
-                        day: '2-digit', month: 'short', year: 'numeric'
-                      })}
-                </span>
-              </div>
+
+    if (
+      !dateString ||
+      dateString === "Not found"
+    ) {
+
+      return `
+
+        <span
+          class="date-value date-unavailable"
+        >
+
+          Not found on official site
+
+        </span>
+
+      `;
+
+    }
+
+
+    const date =
+      new Date(dateString + "T00:00:00");
+
+
+    return `
+
+      <span class="date-value">
+
+        ${date.toLocaleDateString(
+          "en-GB",
+          {
+            day: "2-digit",
+            month: "short",
+            year: "numeric"
+          }
+        )}
+
+      </span>
+
+    `;
+
+  }
+
+
+
+  /* =========================================================
+     RENDER
+     ========================================================= */
+
+  function renderAll() {
+
+
+    const filtered =
+      programmes;
+
+
+    const uniqueUnis =
+      new Set(
+        filtered.map(
+          p => p.uni
+        )
+      );
+
+
+    /* Statistics */
+
+    totalCount.textContent =
+      filtered.length;
+
+
+    uniCount.textContent =
+      uniqueUnis.size;
+
+
+    resultCount.textContent =
+      `Showing ${filtered.length}`;
+
+
+
+    /* Build HTML */
+
+    let html = "";
+
+
+    filtered.forEach(item => {
+
+
+      const typeBadge =
+        item.type === "public"
+
+          ? `
+
+            <span class="tag tag-public">
+
+              <i class="fas fa-university"></i>
+
+              Public
+
+            </span>
+
+          `
+
+          : `
+
+            <span class="tag tag-private">
+
+              <i class="fas fa-building"></i>
+
+              Private
+
+            </span>
+
+          `;
+
+
+      const location =
+        getLocationName(
+          item.division
+        );
+
+
+      html += `
+
+        <div class="result-card">
+
+
+          <div class="info">
+
+
+            <h3>
+
+              <i
+                class="fas fa-school"
+                style="
+                  color:#1d6f9c;
+                  margin-right:6px;
+                "
+              ></i>
+
+              ${item.uni}
+
+            </h3>
+
+
+            <div class="meta">
+
+
+              <span>
+
+                <i class="fas fa-flask"></i>
+
+                ${item.field}
+
+              </span>
+
+
+              <span>|</span>
+
+
+              ${typeBadge}
+
+
+              <span>|</span>
+
+
+              <span class="tag tag-msc">
+
+                MSc
+
+              </span>
+
+
+              <span>|</span>
+
+
+              <span class="location-tag">
+
+                <i class="fas fa-map-pin"></i>
+
+                ${location}
+
+              </span>
+
+
             </div>
-            <a href="${item.link}" class="link-btn" target="_blank">
-              <i class="fas fa-external-link-alt"></i> Details
-            </a>
+
+
+
+            <div class="admission-date">
+
+
+              <i class="far fa-calendar-alt"></i>
+
+
+              Last admission notice:
+
+
+              ${formatDate(
+                item.lastAdmissionNotice
+              )}
+
+
+            </div>
+
+
           </div>
-        `;
-      });
-      resultsContainer.innerHTML = html;
-    }
 
-    // initial render
-    renderAll();
 
-    // hero timestamp
-    const heroStats = document.getElementById('heroStats');
-    if (heroStats) {
-      const now = new Date();
-      const timeStr = now.toLocaleTimeString('en-BD', { hour: '2-digit', minute: '2-digit', hour12: false });
-      const span = document.createElement('span');
-      span.innerHTML = `<i class="far fa-clock"></i> updated ${timeStr}`;
-      heroStats.appendChild(span);
-    }
 
-    console.log("📚 PostGraduationBangladesh · MSc · MPhil · PhD (Dhaka region)");
-    console.log(`📌 ${programmes.length} programmes loaded, all in Dhaka division. Admission-notice dates are shown where verified.`);
-  })();
+          <a
+            href="${item.link}"
+            class="link-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <i class="fas fa-external-link-alt"></i>
+
+            Details
+
+          </a>
+
+
+        </div>
+
+      `;
+
+    });
+
+
+    resultsContainer.innerHTML =
+      html;
+
+  }
+
+
+
+  /* =========================================================
+     INITIAL RENDER
+     ========================================================= */
+
+  renderAll();
+
+
+
+  /* =========================================================
+     CURRENT TIME
+     ========================================================= */
+
+  const heroStats =
+    document.getElementById(
+      "heroStats"
+    );
+
+
+  if (heroStats) {
+
+
+    const now =
+      new Date();
+
+
+    const timeStr =
+      now.toLocaleTimeString(
+        "en-BD",
+        {
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: false
+        }
+      );
+
+
+    const span =
+      document.createElement("span");
+
+
+    span.innerHTML = `
+
+      <i class="far fa-clock"></i>
+
+      updated ${timeStr}
+
+    `;
+
+
+    heroStats.appendChild(
+      span
+    );
+
+  }
+
+
+
+  /* =========================================================
+     CONSOLE INFO
+     ========================================================= */
+
+  console.log(
+    "📚 PostGraduationBangladesh · MSc Physics"
+  );
+
+
+  console.log(
+    `📌 ${programmes.length} MSc Physics programmes loaded.`
+  );
+
+
+  console.log(
+    "📍 Locations are displayed dynamically."
+  );
+
+
+})();
+
 </script>
+
+
 </body>
+
 </html>

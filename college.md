@@ -1,12 +1,8 @@
-1. University of Dhaka 
-2. BUET
-3. Jahangirnagar University
-4. Jagannath University
-5. Dhaka Central University
-6. Dhaka College
-7. Government Titumir College
-8. Government Bangla College
-9. Tejgaon College
-10. Lalmatia Government Mohila College
-11. Kabi Nazrul Government College
-12. Government Shaheed Suhrawardy College
+1. University of Dhaka  https://www.du.ac.bd/webPost/170/23133
+2. BUET  https://phy.buet.ac.bd/notices
+3. Jahangirnagar University  https://msapewp.physicsju.edu.bd/
+4. Jagannath University https://jnu.ac.bd/department/portal/physics
+5. Tejgaon College https://tejgaoncollege.edu.bd/pages
+6. DUET  https://www.duet.ac.bd/department/phy
+7. National University (NU)  https://www.nu.ac.bd/admission-notice.php
+8. Rajshahi University - https://www.ru.ac.bd/physics/notices/
